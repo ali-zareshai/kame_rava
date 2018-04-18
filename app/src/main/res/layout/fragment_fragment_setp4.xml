@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.shiva.FragmentSetp4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/gradiant_msg"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.ali.shiva.CustomTextView
+                android:layout_width="wrap_content"
+                android:text="خسته نباشید..."
+                android:textSize="40dp"
+                android:id="@+id/ttr8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content" />
+            <com.example.ali.shiva.CustomTextView2
+                android:layout_width="match_parent"
+                android:text="@string/end_set"
+                android:layout_below="@+id/ttr8"
+                android:layout_margin="10dp"
+                android:id="@+id/ttr9"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textDirection="rtl"
+                android:layout_height="wrap_content" />
+            <com.example.ali.shiva.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_below="@id/ttr9"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:id="@+id/btnreadquide"
+                android:background="@color/primary_dark"
+                android:textSize="15dp"
+                android:text="مطالعه راهنما"
+                android:layout_height="wrap_content" />
+            <com.example.ali.shiva.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_below="@id/ttr9"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/dark_green"
+                android:id="@+id/entertoapp"
+                android:textSize="15dp"
+                android:text="ورود به برنامه"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/iron"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll1"
+        android:layout_marginBottom="90dp"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarmenu"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="تنظیمات"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/home"
+                    android:id="@+id/homedialog"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardElevation="4dp"
+            android:id="@+id/georo"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="5dp"
+            android:elevation="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/toolbarmenu"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:textSize="12dp"
+                    android:paddingRight="5dp"
+                    android:text="موقعیت جغرافیایی"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/country"
+                    android:layout_height="25dp" />
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/primary"
+                    android:padding="3dp"
+                    android:textSize="10dp"
+                    android:id="@+id/ostanup"
+                    android:text="یزد"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            app:cardElevation="4dp"
+            android:id="@+id/alarmdiv"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="5dp"
+            android:elevation="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/georo"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="5dp"
+                    android:text="آلارم ها"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrowpointtoright"
+                    android:layout_height="15dp" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/alarm"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            app:cardElevation="4dp"
+            android:id="@+id/soaldiv"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="5dp"
+            android:elevation="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/alarmdiv"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:text="سوالات"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/question"
+                    android:layout_height="25dp" />
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"
+                    android:padding="3dp"
+                    android:textSize="10dp"
+                    android:id="@+id/soaltxt"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            app:cardElevation="4dp"
+            android:id="@+id/hoshdare2div"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="5dp"
+            android:elevation="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/soaldiv"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:text="هشدار دوم"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/unnamed"
+                    android:layout_height="25dp" />
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:padding="3dp"
+                    android:textColor="@color/primary"
+                    android:textSize="10dp"
+                    android:id="@+id/hoshdare2txt"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        app:cardElevation="4dp"
+        android:id="@+id/doadiv"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="5dp"
+        android:elevation="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/hoshdare2div"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.ali.shiva.CustomTextView2
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:text="دعای عهد"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/holy"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp" />
+            <com.example.ali.shiva.CustomTextView2
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/primary"
+                android:padding="3dp"
+                android:textSize="10dp"
+                android:id="@+id/ahd2txt"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            app:cardElevation="4dp"
+            android:id="@+id/datadiv"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="5dp"
+            android:elevation="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/doadiv"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:text="نمایش ذکر روز"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/yatta"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/true1"
+                    android:id="@+id/shownotiimg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="25dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--app:cardElevation="4dp"-->
+            <!--android:id="@+id/themediv"-->
+            <!--app:cardCornerRadius="4dp"-->
+            <!--app:cardMaxElevation="5dp"-->
+            <!--android:elevation="5dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_below="@id/datadiv"-->
+            <!--android:layout_height="40dp">-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<com.example.ali.shiva.CustomTextView2-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="50dp"-->
+                    <!--android:text="تنظیمات نمایش"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:src="@drawable/gnome"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_height="25dp" />-->
+                <!---->
+
+            <!--</RelativeLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+    </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/fastoptionbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/fast"
+
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

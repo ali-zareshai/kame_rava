@@ -1,0 +1,147 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    android:layout_marginTop="70dp"
+    android:layout_height="400dp" >
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/Buttonorder1"
+            android:layout_width="0dp"
+            android:layout_margin="2dp"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:tag="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Buttonorder2"
+            android:layout_width="0dp"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:tag="2"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Buttonorder3"
+            android:layout_width="0dp"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:tag="3"
+            android:text="" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/Buttonorder4"
+            android:layout_width="0dp"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:tag="4"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Buttonorder5"
+            android:layout_width="0dp"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:tag="5"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Buttonorder6"
+            android:layout_width="0dp"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:tag="6"
+            android:text="" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/Buttonorder7"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:tag="7"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Buttonorder8"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:tag="8"
+            android:textSize="25sp"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Buttonorder9"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:tag="9"
+            android:textSize="25sp"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            android:text="" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+
+        <ImageButton
+            android:id="@+id/imagemuteorder"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mute_volume" />
+    </TableRow>
+
+
+
+
+</TableLayout>

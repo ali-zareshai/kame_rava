@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/iron2"
+
+    android:layout_height="wrap_content">
+    <com.example.ali.shiva.CustomTextView2
+        android:layout_width="wrap_content"
+        android:text="لطفا نوع سوال خود را انتخاب کنید:"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text11"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/abi"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_width="160dp"
+        android:layout_below="@id/text11"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinnersoaldialog"
+        android:background="@color/white"
+        android:entries="@array/type_name"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relasan"
+        android:layout_below="@+id/spinnersoaldialog"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="60dp">
+        <com.example.ali.shiva.CustomTextView2
+            android:layout_width="wrap_content"
+            android:text="آسان"
+            android:id="@+id/asantxt"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:background="@drawable/asan"
+
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <com.example.ali.shiva.CustomTextView2
+            android:layout_width="wrap_content"
+            android:text="متوسط"
+            android:id="@+id/middetxt"
+            android:background="@drawable/midde"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <com.example.ali.shiva.CustomTextView2
+            android:layout_width="wrap_content"
+            android:text="سخت"
+            android:id="@+id/hardtxt"
+            android:background="@drawable/hard"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.example.ali.shiva.CustomButton
+        android:layout_width="90dp"
+        android:id="@+id/oksoaldialog"
+        android:background="@color/white"
+        android:layout_below="@id/relasan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/sussecc"
+        android:text="خب"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ali.shiva.MainActivity">
+    <item
+        android:orderInCategory="100"
+        android:title="خروج"
+        android:icon="@drawable/shutdown"
+        app:showAsAction="always"
+        android:id="@+id/action_qhelp"
+        android:visible="true"
+        android:enabled="true" />
+</menu>

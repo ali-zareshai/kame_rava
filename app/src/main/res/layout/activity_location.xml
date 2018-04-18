@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ali.shiva.LocationAc">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/editTextlocalx"
+        android:layout_alignStart="@+id/editTextlocalx"
+        android:layout_marginTop="34dp"
+        android:id="@+id/editTextlocaly"
+        android:hint="مختصاتy "
+        android:maxLength="6"
+        android:textDirection="rtl"
+        android:typeface="monospace"
+        android:textStyle="normal|bold"
+        android:inputType="numberDecimal" />
+
+    <com.example.ali.shiva.CustomButton
+        android:layout_width="match_parent"
+        android:background="@color/light_green"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:text="گرفتن مختصات از طریق GPS"
+        android:id="@+id/getLocationBtn"
+        android:layout_below="@+id/editTextlocaly"
+        android:layout_marginTop="11dp" />
+
+    <com.example.ali.shiva.CustomButton
+        android:text="خب"
+        android:layout_marginTop="20dp"
+        android:background="@color/text_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/getLocationBtn"
+        android:id="@+id/buttonlocalok"
+        android:elevation="8dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="47dp"
+        android:id="@+id/editTextlocalx"
+        android:hint="مختصاتX "
+        android:textStyle="normal|bold"
+        android:typeface="monospace"
+        android:maxLength="6"
+        android:textDirection="rtl"
+        android:inputType="numberDecimal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

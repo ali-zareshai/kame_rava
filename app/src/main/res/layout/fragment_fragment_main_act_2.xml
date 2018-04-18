@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.shiva.Fragment_mainAct_2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.ali.shiva.CustomTextView3
+            android:id="@+id/textzekercard"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/dark_green"
+            android:textDirection="rtl"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.shiva.SelectMusicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <CheckBox
+            android:id="@+id/checkBoxselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="30dp"
+            android:layoutDirection="rtl"
+            android:text="پخش اذان در آلارم اول" />
+
+        <Spinner
+                android:id="@+id/spinner"
+
+                android:entries="@array/country_arrays"
+                android:prompt="@string/country_prompt"
+                android:layout_marginTop="80dp"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/buttonsaveselect"
+            android:layout_width="36dp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="140dp"
+            android:visibility="invisible"
+            android:layout_marginRight="35dp"
+            android:layout_height="36dp"
+            android:src="@drawable/shutdown" />
+        <com.example.ali.shiva.CustomTextView2
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recycselect"
+            android:layout_toLeftOf="@+id/buttonsaveselect"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textviewinrec"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="اضافه کردن آهنگ از کارت حافظه" />
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycselect"
+            android:padding="10dp"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonsaveselect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+        <Toolbar
+            android:layout_width="match_parent"
+            android:background="@color/abi"
+            android:layout_alignParentTop="true"
+            android:layout_height="63dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView3
+                    android:layout_width="wrap_content"
+                    android:text="انتخاب نوع موزیک"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="21dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+        </Toolbar>
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

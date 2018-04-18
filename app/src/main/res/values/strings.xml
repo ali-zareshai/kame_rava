@@ -1,0 +1,136 @@
+<resources>
+    <string name="aznant">اذان صبح</string>
+    <string name="aftab">طلوع آفتاب</string>
+    <string name="goreh">اذان ظهر</string>
+    <string name="gorub">غروب</string>
+    <string name="magreb">مغرب</string>
+    <string name="nimeh_shab">نیمه شب</string>
+    <string name="shamsi">تاریخ شمسی:</string>
+    <string name="mandeh">زمان تقریبی مانده تا اذان صبح:</string>
+    <string name="manatebat">مناسبت ها امروز:</string>
+    <string name="action_settings">تنظیم تم</string>
+    <string name="action_save">ذخیره تنظیمات</string>
+    <string name="about">درباره ما</string>
+    <string name="exist">خروج</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="decimal_button_text">,</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="minus_button_text">-</string>
+    <string name="no_location_yet">Please wait. Detecting your location...\nOr you can select your city in the Settings.</string>
+    <string name="default_location_text">Direction of Qibla \nin %s</string>
+    <string name="geo_location_info">Location Data Acquired.</string>
+    <string name="latitude_north">N</string>
+    <string name="latitude_south">S</string>
+    <string name="longitude_east">E</string>
+    <string name="longitude_west">W</string>
+    <string name="screen_down_text">Please hold your phone horizontally and toward upside so that it\'s compass could work. Can\'t determine the direction of the north accurately now.</string>
+
+
+    <string name="gps_status">Use GPS</string>
+    <string name="gps_status_summary">Enables using GPS for getting your location.</string>
+
+    <string name="gps_prompt">Use GPS</string>
+    <string name="gps_summary">Enables using GPS for getting your location.</string>
+    <string name="gps_pref_key">GPS_LOCATION_PREF</string>
+    <string name="state_location_pref_key">state_LOCATION_PREF</string>
+
+    <string name="state_location_title">Set your location manually</string>
+    <string name="state_location_summary">Select one of province capitals of Iran if you are near them.</string>
+    <string name="country_prompt">نوع آهنگ را انتخاب کنید</string>
+
+    <string-array name="country_arrays">
+        <item>موزیک ملایم</item>
+        <item>موزیک تند</item>
+        <item>انتخاب دستی</item>
+
+    </string-array>
+
+
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="msg1">وقتی بنده مؤمن به نماز می ایستد، خداوند سبحان به او نظر می کند</string>
+    <string name="msg2">نماز به صورت انسانی سفید چهره وارد قبر میت شده و با او انس می گیرد و وحشتهای برزخ را از اوبرطرف می کند</string>
+    <string name="msg3">به خانه هایتان با خواندن نماز، و قرائت قرآن، نورانیت ببخشید</string>
+    <string name="msg4">نماز کفاره گناهان می باشد. سپس آن حضرت این آیه را خواند که :"حسنات سیئات را از بین می برد"</string>
+    <string name="msg5">بر خیز و نماز به جا آور! پس همانا در نماز شفا است</string>
+    <string name="msg6">کسی که مطیع نماز نباشد، نمازش کامل نیست و اطاعت از نماز همان دوری از فحشاء و منکر است</string>
+    <string name="msg7">نماز چهره شیطان را سیاه می کند</string>
+    <string name="msg8">نماز سلاح مؤمن علیه کافراست</string>
+    <string name="msg9">نمازموجب اجابت دعا و قبولی اعمال است</string>
+    <string name="msg10">نماز زاد و توشه مؤمن در دنیا برای آخرت می باشد</string>
+    <string name="msg11">نماز مونس (نمازگزار) در قبر، فرش نیکو در زیرش، و پاسخ نمازگزار برای نکیر و منکر می باشد</string>
+    <string name="msg12">خواب باعلم بهتر از نماز با جهل است</string>
+    <string name="msg13">همانا، محبوب ترین اعمال در نزد خداوند: نماز، نیکی کردن و جهاد در راه خداست</string>
+    <string name="msg15">اولین چیزی که از انسان ها سؤال می شود، نمازهای پنج گانه است</string>
+    <string name="msg16">نماز (به منزله) رأس اسلام است</string>
+    <string name="msg17">زمانی که بنده ای  نمازش را به جماعت بخواند، خداوند از او حیاء می کند، و هنگامی  که از او طلب حاجت کرد، منصرف نشود، مگراین که حاجتش را برآورد</string>
+    <string name="msg18">تکبیر اول را با امام جماعت گفتن بهتر است از دنیا و آنچه در آن است</string>
+    <string name="msg19">روشنی چشم من در نماز است</string>
+    <string name="msg20">نماز کلید بهشت است</string>
+    <string name="msg21">همانانماز خواندن وسیله نزدیکی مؤمن به خداست</string>
+    <string name="msg22">نماز، پایه و ستون دین شماست</string>
+    <string name="msg23">علامت و نشانه ایمان نمازاست</string>
+    <string name="msg24">نماز نور مؤمن است</string>
+    <string name="msg25">بنده مادام که منتظر نماز است در حال نماز است</string>
+    <string name="msg26">نماز از سنتهای  دین ، و مایه خشنودی پروردگار و راه و روش پیامبران است</string>
+    <string name="msg27">آگاه باشید نماز سفره گسترده خدا در زمین است که خداوند آن را روزی  پنج  بار برای اهل رحمتش (افراد شایسته رحمت ) گوارا نموده است</string>
+    <string name="msg28">چون نماز، تسبیح ، تهلیل ، تکبر، تمجید، تقدیس ،قول ، و دعوت به حق است</string>
+    <string name="msg30">همانا، محبوبترین اعمال در نزد خداوند: نماز، نیکی کردن و جهاددر راه خداست</string>
+    <string name="msg31">نماز مرد که داوطلبانه و مستحبی درجایی که مردم او را نبینند به جا آورد، برابر بیست و پنج نماز است که در برابرچشم مردم انجام دهد</string>
+    <string name="msg14">نماز مونس (نمازگزار) در قبر، فراش نیکو در زیرش ،و پاسخ نمازگزار برای نکیر و منکر می باشد</string>
+    <string name="msg29">برای نمازباید انتظار کشید ولی نماز را معطل کار دیگر نباید کرد</string>
+    <string name="msg_f">پیامبر اکرم(ص)</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="D0">یا رب العالمین</string>
+    <string name="D1">یا ذالجلال والاکرام </string>
+    <string name="D2">یا قاضی الحاجات</string>
+    <string name="D3">یا ارحم الراحمین</string>
+    <string name="D4">یا حی یا قیوم</string>
+    <string name="D5"> لا اله الا الله الملک الحق المبین </string>
+    <string name="D6">اللهم صل علی محمد و ال محمد </string>
+    <string name="type1">افرادی که خواب خیلی سبک دارند و به راحتی از خواب بیدار می شونند</string>
+    <string name="type2">افرادی که خواب سبک دارند ولی برای بیدار شدن نیاز به زمان بیشتری دارند</string>
+    <string name="type3">افرادی که خوابشان نه سبک است نه سنگین و با هشدار معمولی از خواب بیدار می شونند</string>
+    <string name="type4">افرادی که خوابشان نه سبک است نه سنگین و با هشدار زیاد از خواب بیدار می شونند</string>
+    <string name="type5">افرادی که خواب سنگین دارند و به سادگی از خواب بیدار نمی شونند</string>
+    <string name="setup3">2_شما عضو کدام یک از دسته از افراد زیر هستید؟</string>
+    <string name="end_set">از اینکه به سوالات ما جواب دادید از شما تشکر می کنیم.\n خاطرنشان می شویم که شما می توانید بعدا تنظیمات پیش فرض  ما را در قسمت تنظیمات تغییر دهید.\n هم چنین شما می توانید به بقیه تنظیمات اپلیکشن مانند:دعاها و ... از قسمت تنظیمات دسترسی پیدا کنید.\n در پایان از شما درخواست می کنیم تا قسمت راهنما اپیلکشن را مطالعه کنید.\n خدانگهدار</string>
+    <string name="welcome">کاربر گرامی:\n از اینکه به جمع کاربران اپیلکشن ما پیوستید خوشحالیم و از اینکه به ما برای ادای نماز اول وقت خود اعتماد کردید ممنونیم ما برای رفاه حال شما در تنظیمات اپلیکشن این پخش را آماده کرده ایم تا بتوانید سریعتر برنامه خود را تنظیم کنید.\n آیا می خواهید ادامه دهید؟ </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="des_spinner">(شما می توانید برای انتخاب مختصات دقیق تر از مسیر: \n تنظمیمات-انتخاب موقعیت جغرافیایی-انتخاب دستی \n از GPS اقدام به تعیین مختصات جغرافیایی خود  به صورت دقیق تر کنید.)</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="grren">#fcfcfc</color>
+    <color name="back_ver">#7de26fff</color>
+    <color name="text_shadow">#77fbff08</color>
+    <color name="text_shadow2">#dc003b09</color>
+    <color name="back_ver1">#a251d1ff</color>
+    <color name="text_shadow1">#7718ff08</color>
+    <color name="grren1">#e0ffe8</color>
+    <color name="black">#000000</color>
+    <color name="gray">#BBBBBB </color>
+    <color name="toolbar_color">#ff9664</color>
+    <color name="toolbar_color2">#34ffc664</color>
+    <color name="light_green">#5a00bbd4</color>
+    <color name="dark_green">#22b700</color>
+    <color name="gracy">#d2d2d2</color>
+    <color name="green_mag">#e9ffffff</color>
+    <color name="wihtopictiy">#a2fffefe</color>
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="warm">#ff8686</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#e7e7e7</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#008df2</color>
+    <color name="abi">#3582b9</color>
+    <color name="sefid_back">#51ffffff</color>
+    <color name="text_slide">#00c756</color>
+    <color name="text_notif">#006eb3</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="bbbbb">#a45381ff</color>
+
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#bebebe</color>
+    <color name="iron3">#d2d2d2</color>
+    <color name="iron2">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="black_overlay">#66000000</color>
+</resources>

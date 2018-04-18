@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.shiva.Fragment_mainAct_1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/msgtoday"
+        android:layout_height="wrap_content">
+        <com.example.ali.shiva.CustomTextView3
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:id="@+id/textViewsun_ver2"
+            android:textDirection="rtl"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:padding="3dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</FrameLayout>

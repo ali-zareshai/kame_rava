@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_time_name">
+        <item>30 ثانیه</item>
+        <item>45 ثانیه</item>
+        <item>60 ثانیه</item>
+        <item>75 ثانیه</item>
+        <item>90 ثانیه</item>
+    </string-array>
+
+    <string-array name="alarm_time_value">
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="alarm_interval_name">
+        <item>120 دقیقه قبل از اذان</item>
+        <item>90 دقیقه قبل از اذان</item>
+        <item>60 دقیقه قبل از اذان</item>
+        <item>30 دقیقه قبل از اذان</item>
+        <item>20 دقیقه قبل از اذان</item>
+        <item>10 دقیقه قبل از اذان</item>
+        <item> هنگام اذان</item>
+        <item>15 دقیقه مانده به طلوع</item>
+        <item>30 دقیقه مانده به طلوع</item>
+        <item>45 دقیقه مانده به طلوع</item>
+        <item>1 ساعت مانده به طلوع</item>
+    </string-array>
+
+    <string-array name="alarm_interval_value">
+        <item>120a</item>
+        <item>90a</item>
+        <item>60a</item>
+        <item>30a</item>
+        <item>20a</item>
+        <item>10a</item>
+        <item>0a</item>
+        <item>15t</item>
+        <item>30t</item>
+        <item>45t</item>
+        <item>60t</item>
+    </string-array>
+    <string-array name="problem_level_name">
+        <item>آسان</item>
+        <item>متوسط</item>
+        <item>سخت</item>
+    </string-array>
+
+    <string-array name="problem_level_value">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="intervel_betwen_alarm_name">
+        <item>الگوریتم هوشمند</item>
+        <item>متناوب</item>
+        <item>5 دقیقه</item>
+        <item>10 دقیقه</item>
+        <item>15 دقیقه</item>
+        <item>20 دقیقه</item>
+        <item>30 دقیقه</item>
+    </string-array>
+
+    <string-array name="intervel_betwen_alarm_value">
+        <item>100</item>
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="city_name">
+        <item>انتخاب دستی</item>
+        <item>آذربایجان شرقی</item>
+        <item>آذربایجان غربی</item>
+        <item>اردبیل</item>
+        <item>اصفهان</item>
+        <item>البرز</item>
+        <item>ایلام</item>
+        <item>بوشهر</item>
+        <item>تهران</item>
+        <item>چهارمحال و بختیاری</item>
+        <item>خراسان جنوبی</item>
+        <item>خراسان رضوی</item>
+        <item>خراسان شمالی</item>
+        <item>خوزستان</item>
+        <item>زنجان</item>
+        <item>سمنان</item>
+        <item>سیستان و بلوچستان</item>
+        <item>فارس</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کردستان</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>کهگیلویه و بویراحمد</item>
+        <item>گلستان</item>
+        <item>گیلان</item>
+        <item>لرستان</item>
+        <item>مازندران</item>
+        <item>مرکزی</item>
+        <item>هرمزگان</item>
+        <item>همدان</item>
+        <item>یزد</item>
+    </string-array>
+    <string-array name="city_value">
+        <item>0</item>
+        <item>38.05:46.28</item>
+        <item>37.52:45.04</item>
+        <item>38.24:48.29</item>
+        <item>32.65:51.67</item>
+        <item>35.49:50.57</item>
+        <item>33.63:46.42</item>
+        <item>28.92:50.20</item>
+        <item>35.41:51.20</item>
+        <item>32.35:50.82</item>
+        <item>32.84:59.29</item>
+        <item>36.30:59.60</item>
+        <item>37.45:57.32</item>
+        <item>31.53:49.88</item>
+        <item>36.67:48.48</item>
+        <item>35.57:53.39</item>
+        <item>29.45:60.85</item>
+        <item>29.64:52.50</item>
+        <item>36.26:50.00</item>
+        <item>34.64:50.89</item>
+        <item>35.30:47.00</item>
+        <item>30.28:57.06</item>
+        <item>34.34:46.42</item>
+        <item>30.39:51.36</item>
+        <item>36.86:54.44</item>
+        <item>37.22:49.63</item>
+        <item>33.46:48.35</item>
+        <item>36.56:53.05</item>
+        <item>34.08:49.67</item>
+        <item>27.18:56.26</item>
+        <item>34.80:48.51</item>
+        <item>31.89:54.36</item>
+    </string-array>
+
+    <string-array name="city_name_sp">
+        <item>آذربایجان شرقی</item>
+        <item>آذربایجان غربی</item>
+        <item>اردبیل</item>
+        <item>اصفهان</item>
+        <item>البرز</item>
+        <item>ایلام</item>
+        <item>بوشهر</item>
+        <item>تهران</item>
+        <item>چهارمحال و بختیاری</item>
+        <item>خراسان جنوبی</item>
+        <item>خراسان رضوی</item>
+        <item>خراسان شمالی</item>
+        <item>خوزستان</item>
+        <item>زنجان</item>
+        <item>سمنان</item>
+        <item>سیستان و بلوچستان</item>
+        <item>فارس</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کردستان</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>کهگیلویه و بویراحمد</item>
+        <item>گلستان</item>
+        <item>گیلان</item>
+        <item>لرستان</item>
+        <item>مازندران</item>
+        <item>مرکزی</item>
+        <item>هرمزگان</item>
+        <item>همدان</item>
+        <item>یزد</item>
+    </string-array>
+    <string-array name="city_value_sp">
+        <item>38.05:46.28</item>
+        <item>37.52:45.04</item>
+        <item>38.24:48.29</item>
+        <item>32.65:51.67</item>
+        <item>35.49:50.57</item>
+        <item>33.63:46.42</item>
+        <item>28.92:50.20</item>
+        <item>35.41:51.20</item>
+        <item>32.35:50.82</item>
+        <item>32.84:59.29</item>
+        <item>36.30:59.60</item>
+        <item>37.45:57.32</item>
+        <item>31.53:49.88</item>
+        <item>36.67:48.48</item>
+        <item>35.57:53.39</item>
+        <item>29.45:60.85</item>
+        <item>29.64:52.50</item>
+        <item>36.26:50.00</item>
+        <item>34.64:50.89</item>
+        <item>35.30:47.00</item>
+        <item>30.28:57.06</item>
+        <item>34.34:46.42</item>
+        <item>30.39:51.36</item>
+        <item>36.86:54.44</item>
+        <item>37.22:49.63</item>
+        <item>33.46:48.35</item>
+        <item>36.56:53.05</item>
+        <item>34.08:49.67</item>
+        <item>27.18:56.26</item>
+        <item>34.80:48.51</item>
+        <item>31.89:54.36</item>
+    </string-array>
+    <string-array name="type_name">
+    <item>بدون سوال</item>
+    <item>مسله ریاضی</item>
+    <item>کپچا معمولی</item>
+    <item>کپچا ریاضی</item>
+    <item>تکان دادن موبایل</item>
+    <item>تطابق رنگ ها</item>
+    <item>مرتب سازی</item>
+    <item>حافظه</item>
+</string-array>
+
+    <string-array name="type_value">
+        <item>5</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="type_alarm_name">
+        <item>تصادفی</item>
+        <item>ترتیب</item>
+    </string-array>
+
+    <string-array name="type_alarm_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="alarm_a_name">
+        <item>هرگز</item>
+        <item>30 ثانیه</item>
+        <item>60 ثانیه</item>
+        <item>90 ثانیه</item>
+        <item>120 ثانیه</item>
+        <item>150 ثانیه</item>
+        <item>180 ثانیه</item>
+    </string-array>
+
+    <string-array name="alarm_a_value">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="type_ahang_name">
+        <item>موزیکال</item>
+        <item>ملایم</item>
+        <item>دستی</item>
+    </string-array>
+
+    <string-array name="type_ahang_name_value">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="type_moazen_name">
+        <item>آغاصی</item>
+        <item>منصوری</item>
+        <item>رحیم زاده اردبیلی</item>
+    </string-array>
+
+    <string-array name="type_moazen_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="type_talevat_name">
+        <item>صلوات 1</item>
+        <item>صلوات 2</item>
+        <item>صلوات 3</item>
+        <item>تواشیح</item>
+    </string-array>
+
+    <string-array name="type_talevat_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+    <string-array name="type_level_two_name">
+        <item>5 امتیاز</item>
+        <item>10 امتیاز</item>
+        <item>15 امتیاز</item>
+        <item>20 امتیاز</item>
+    </string-array>
+
+    <string-array name="type_level_two_value">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+
+    </string-array>
+    <string-array name="man_wo_name">
+        <item>مرد</item>
+        <item>زن</item>
+    </string-array>
+
+    <string-array name="man_wo_val">
+        <item>male</item>
+        <item>femle</item>
+    </string-array>
+    <string-array name="state_names">
+
+        <item>Arak</item>
+        <item>Ardabil</item>
+        <item>Orumiyeh</item>
+        <item>Esfehan</item>
+        <item>Ahvaz</item>
+        <item>Ilam</item>
+        <item>Bojnurd</item>
+        <item>Bandar Abbas</item>
+        <item>Bushehr</item>
+        <item>Birjand</item>
+        <item>Tabriz</item>
+        <item>Tehran</item>
+        <item>Khoram Abad</item>
+        <item>Rasht</item>
+        <item>Zahedan</item>
+        <item>Zanjan</item>
+        <item>Sari</item>
+        <item>Semnan</item>
+        <item>Sanandaj</item>
+        <item>Shahr-e-kord</item>
+        <item>Shiraz</item>
+        <item>Ghazvin</item>
+        <item>Qom</item>
+        <item>Karaj</item>
+        <item>Kerman</item>
+        <item>Kermanshah</item>
+        <item>Gorgan</item>
+        <item>Mashhad</item>
+        <item>Hamedan</item>
+        <item>Yasuj</item>
+        <item>Yazd</item>
+    </string-array>
+    <string-array translatable="false" name="state_keys">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="final_hosdar_name">
+        <item>15 دقیقه تا طلوع</item>
+        <item>20 دقیقه تا طلوع</item>
+        <item>30 دقیقه تا طلوع</item>
+    </string-array>
+
+    <string-array name="final_hosdar_code">
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+
+
+</resources>

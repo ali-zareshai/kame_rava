@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.shiva.FragmentSetp2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/gradiant_msg"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.ali.shiva.CustomTextView2
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:id="@+id/ttr4"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:text="1_لطفا استان محل زندگی خود را انتخاب کنید:"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_below="@+id/ttr4"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spiner_set2"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:entries="@array/city_name_sp"
+                android:background="@color/accent"
+                android:layout_height="wrap_content"/>
+            <com.example.ali.shiva.CustomTextView2
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/spiner_set2"
+                android:layout_marginTop="25dp"
+                android:padding="15dp"
+                android:id="@+id/ttr5"
+                android:textStyle="bold"
+                android:textColor="@color/warm"
+                android:textDirection="rtl"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/des_spinner"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

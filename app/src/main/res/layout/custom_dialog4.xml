@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/iron2"
+
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/doaahddialodrel"
+        android:layout_height="60dp">
+        <com.example.ali.shiva.CustomTextView2
+            android:layout_width="wrap_content"
+            android:text="پخش دعای عهد در هنگام طلوع آفتاب:"
+            android:id="@+id/text11"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/abi"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/ahdimagedialog"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/true1"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <com.example.ali.shiva.CustomTextView2
+        android:layout_width="match_parent"
+        android:textColor="@color/abi"
+        android:id="@+id/voltxt"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:text="بلندی صدا هنگام پخش دعای عهد:"
+        android:layout_below="@+id/doaahddialodrel"
+        android:layout_height="wrap_content" />
+    <com.example.ali.shiva.CustomTextView2
+        android:layout_width="wrap_content"
+        android:id="@+id/vol_progress"
+        android:textColor="@color/primary"
+        android:layout_alignLeft="@id/voltxt"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/doaahddialodrel"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:id="@+id/seekbarvolumeahddialog"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:max="16"
+        android:layout_below="@+id/voltxt"
+        android:layout_height="wrap_content" />
+
+
+
+    <com.example.ali.shiva.CustomButton
+        android:layout_width="90dp"
+        android:id="@+id/okhoshdare2dialog"
+        android:background="@color/white"
+        android:layout_below="@id/seekbarvolumeahddialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/sussecc"
+        android:text="خب"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

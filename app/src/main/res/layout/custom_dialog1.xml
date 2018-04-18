@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/iron2"
+
+    android:layout_height="wrap_content">
+    <com.example.ali.shiva.CustomTextView2
+        android:layout_width="wrap_content"
+        android:text="لطفا استان محل زندگی خود را انتخاب کنید:"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text11"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/abi"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_width="160dp"
+        android:layout_below="@id/text11"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinnerdialog"
+        android:background="@color/white"
+        android:entries="@array/city_name_sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+    <com.example.ali.shiva.CustomTextView2
+        android:layout_width="wrap_content"
+        android:layout_below="@id/spinnerdialog"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text22"
+        android:textDirection="rtl"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary_dark"
+        android:text="شما می توانید از طریق GPS دستگاه خود مختصات دقیق تری وارد کنید."
+        android:layout_height="wrap_content" />
+    <com.example.ali.shiva.CustomButton
+        android:layout_width="wrap_content"
+        android:id="@+id/okdialog1"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/text22"
+        android:layout_alignLeft="@+id/gpsdialog1"
+        android:layout_marginTop="10dp"
+        android:text="خب"
+        android:background="@color/light_green"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    <com.example.ali.shiva.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/text22"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gpsdialog1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:text="GPS"
+        android:background="@color/light_green"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

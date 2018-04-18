@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ali.shiva">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/terat"
+        android:label=""
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PerfernceActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AlarmAlertActivity"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".StartAlarm2"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".StartAlarmBor"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".StopAlarmservice"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Hoshdareh2Alarm"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".StopAllServiceSer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".CaptchaActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".BootSatrtUp"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AndroidAccelerometerExample"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".Alarm2broad"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".LocationAc"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.example.ali.shiva.LocationAc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RandomActivit"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".SlideBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".DoaAhdActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".EmtiazService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".EmtiazBorder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".EmtiazActivity"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Main2Activity"
+            android:label=""
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".NotifationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".WaitBorder"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".CheckInternet"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".ServiceCheckInternet"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".DayChange"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MemoryGame"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".OrderGame"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".RepeatGame"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".HelpActivity" />
+        <activity
+            android:name=".SelectMusicActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.ali.shiva.SelectMusicActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StepActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.example.ali.shiva.StepActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SliderFinalActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".AlarmfinalService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".CheckFinalService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".CheckFinalReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".ServiceForAzan"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ChangeNotfiService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".EndService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

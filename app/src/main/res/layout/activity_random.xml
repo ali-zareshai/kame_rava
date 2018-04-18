@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2014 Sheldon Neilson www.neilson.co.za
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewemtiaz" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/f3"
+            android:id="@+id/imageViewshgel" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:id="@+id/floatingActionButtonmuterandom331"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/mute_volume" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
+
+
+        <ImageButton
+        android:layout_width="0dp"
+         android:layout_height="100dp"
+         android:scaleType="fitCenter"
+        app:srcCompat="@drawable/f16"
+        android:layout_weight="1"
+        android:tag="1"
+        android:id="@+id/imageButton100" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="2"
+            android:id="@+id/imageButton101" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="3"
+            android:id="@+id/imageButton102" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="4"
+            android:id="@+id/imageButton103" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="5"
+            android:id="@+id/imageButton104" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="6"
+            android:id="@+id/imageButton105" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="7"
+            android:id="@+id/imageButton106" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="8"
+            android:id="@+id/imageButton107" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="9"
+            android:id="@+id/imageButton108" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="10"
+            android:id="@+id/imageButton109" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="11"
+            android:id="@+id/imageButton110" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="12"
+            android:id="@+id/imageButton111" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="13"
+            android:id="@+id/imageButton112" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="14"
+            android:id="@+id/imageButton113" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="15"
+            android:id="@+id/imageButton114" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/f16"
+            android:layout_weight="1"
+            android:tag="16"
+            android:id="@+id/imageButton115" />
+
+    </TableRow>
+
+
+
+</TableLayout>

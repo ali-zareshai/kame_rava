@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceScreen
+            android:title="تنظیم سریع"
+            android:summary="">
+                <intent android:action="com.example.ali.shiva.StepActivity"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="موقعیت جغرافیایی"
+            android:persistent="false">
+                <ListPreference
+                    android:key="city"
+                    android:defaultValue="31.89:54.36"
+                    android:title="استان محل زندگی"
+                    android:summary="%s"
+                    android:entries="@array/city_name"
+                    android:entryValues="@array/city_value"
+                    android:dialogTitle="انتخاب استان" />
+                <PreferenceScreen
+                    android:title="انتخاب موقعیت به صورت دستی"
+                    android:summary="">
+                        <intent android:action="com.example.ali.shiva.LocationAc"/>
+                </PreferenceScreen>
+
+
+
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="آلارم ها"
+            android:persistent="false">
+                <CheckBoxPreference
+                    android:key="vibreh"
+                    android:defaultValue="true"
+                    android:title="ویبره"
+                    android:summary="فعال کردن ویبره در هنگام آلارم؟" />
+
+                <CheckBoxPreference
+                    android:key="volume"
+                    android:defaultValue="true"
+                    android:title="آلارم"
+                    android:summary="افزایش تدریجی صدای آلارم؟" />
+
+                <ListPreference
+                    android:key="alarm_time"
+                    android:defaultValue="60"
+                    android:title="مدت زمان آلارم"
+                    android:summary="%s"
+                    android:entries="@array/alarm_time_name"
+                    android:entryValues="@array/alarm_time_value"
+                    android:dialogTitle="مدت زمان پخش آلارم" />
+                <ListPreference
+                    android:key="alarm_time_interval"
+                    android:defaultValue="0a"
+                    android:title="مدت زمان تاخیر آلارم"
+                    android:summary="%s"
+                    android:entries="@array/alarm_interval_name"
+                    android:entryValues="@array/alarm_interval_value"
+                    android:dialogTitle="مدت تاخیر آلارم" />
+                <!--<com.example.ali.shiva.CustomDialogPreference-->
+                    <!--android:key="pref_dialog"-->
+                    <!--android:title="مدت زمان تاخیر آلارم"/>-->
+                <ListPreference
+                    android:key="intervel_betwen_alarm"
+                    android:defaultValue="5"
+                    android:title="فاصله بین آلارم ها"
+                    android:summary="%s"
+                    android:entries="@array/intervel_betwen_alarm_name"
+                    android:entryValues="@array/intervel_betwen_alarm_value"
+                    android:dialogTitle="فاصله بین آلارم ها" />
+                <ListPreference
+                    android:key="type_alarm_random"
+                    android:title="طریقه پخش زنگ های هشدار"
+                    android:defaultValue="0"
+                    android:summary="%s"
+                    android:entries="@array/type_alarm_name"
+                    android:entryValues="@array/type_alarm_value"
+                    android:dialogTitle="نحوه پخش؟" />
+                <PreferenceScreen
+                    android:title="انتخاب نوع آهنگ"
+                    android:summary="">
+                        <intent android:action="com.example.ali.shiva.SelectMusicActivity"/>
+                </PreferenceScreen>
+                <ListPreference
+                    android:key="type_moazen"
+                    android:title="موذن"
+                    android:defaultValue="0"
+                    android:summary="%s"
+                    android:entries="@array/type_moazen_name"
+                    android:entryValues="@array/type_moazen_value"
+                    android:dialogTitle="موذن" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="سوالات"
+            android:persistent="false">
+                <ListPreference
+                    android:key="type_problem"
+                    android:title="نوع سوال"
+                    android:defaultValue="0"
+                    android:summary="%s"
+                    android:entries="@array/type_name"
+                    android:entryValues="@array/type_value"
+                    android:dialogTitle="نوع سوال" />
+                <ListPreference
+                    android:key="problem_level"
+                    android:defaultValue="3"
+                    android:title="سطح سوالات"
+                    android:summary="%s"
+                    android:entries="@array/problem_level_name"
+                    android:entryValues="@array/problem_level_value"
+                    android:dialogTitle="سطح سوالات" />
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="هشدار دوم"
+            android:persistent="false">
+                <ListPreference
+                    android:key="alarma"
+                    android:title="هشدار دوم"
+                    android:defaultValue="0"
+                    android:summary="%s"
+                    android:entries="@array/alarm_a_name"
+                    android:entryValues="@array/alarm_a_value"
+                    android:dialogTitle="هشدار دوم" />
+                <ListPreference
+                    android:key="type_talevat"
+                    android:title="صلوات"
+                    android:defaultValue="0"
+                    android:summary="%s"
+                    android:entries="@array/type_talevat_name"
+                    android:entryValues="@array/type_talevat_value"
+                    android:dialogTitle="صلوات" />
+                <ListPreference
+                    android:key="type_level_two"
+                    android:title="سطح سوالات هشدار دوم"
+                    android:defaultValue="10"
+                    android:summary="%s"
+                    android:entries="@array/type_level_two_name"
+                    android:entryValues="@array/type_level_two_value"
+                    android:dialogTitle="مقدار امتیاز لازم" />
+
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="دعاها"
+            android:persistent="false">
+                <CheckBoxPreference
+                    android:key="ahd"
+                    android:defaultValue="false"
+                    android:title="دعای عهد"
+                    android:summary="پخش دعای عهد هنگام طلوع آفتاب؟" />
+                <SeekBarPreference
+                android:key="vol_ahd"
+                android:title="بلندی صدای دعای عهد"
+                android:summary="بلندی صدای دعای عهد؟"
+                android:max="15"
+                android:defaultValue="10" />
+
+
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:title="هشدار نهایی"
+            android:persistent="false">
+
+
+                <ListPreference
+                    android:key="type_final_alarm"
+                    android:title="زمان هشدار نهایی"
+                    android:defaultValue="20"
+                    android:summary="%s"
+                    android:entries="@array/final_hosdar_name"
+                    android:entryValues="@array/final_hosdar_code"
+                    android:dialogTitle="زمان هشدار نهایی" />
+
+        </PreferenceScreen>
+
+
+        <CheckBoxPreference
+            android:key="enable_date"
+            android:defaultValue="false"
+            android:title="نمایش تاریخ روز در نوار هشدار"
+            android:summary="فعال کردن نمایش تاریخ" />
+
+
+
+</PreferenceScreen>

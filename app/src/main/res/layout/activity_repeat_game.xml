@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2014 Sheldon Neilson www.neilson.co.za
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent" >
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat100" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat101" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat102" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat103" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat104" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat105" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat106" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat107" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat108" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat109" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat110" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat111" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat112" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat113" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat114" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:id="@+id/Buttonrepeat115" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+        <ImageButton
+            android:id="@+id/imagemuterepeat"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mute_volume" />
+
+
+    </TableRow>
+
+
+
+</TableLayout>

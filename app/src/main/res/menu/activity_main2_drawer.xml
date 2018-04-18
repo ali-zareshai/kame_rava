@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_rotbeh"
+            android:icon="@drawable/rating"
+            android:title="مشاهده رتبه روز گذشته" />
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/test"
+            android:title="پیش نمایش" />
+
+
+
+    </group>
+
+    <item android:title="تنظیمات بیشتر">
+        <menu>
+            <item
+                android:id="@+id/nav_option"
+                android:icon="@drawable/maintenance"
+                android:title="تنظیمات" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help"
+                android:title="راهنما" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="ارسال نرم افزار" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/information"
+                android:title="درباره ما" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/shutdown"
+                android:title="خروج" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:backgroundTint="@color/gracy"
+        android:textDirection="rtl"
+        android:textSize="16dp"
+        android:hint="نام"
+        android:ems="10"
+        android:id="@+id/editText1_dialog_scroll" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/gracy"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:textDirection="rtl"
+        android:lines="3"
+        android:minLines="2"
+        android:gravity="top|right"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:hint="نظر و انتقاد"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/editText2_dialog_scroll"
+        android:layout_weight="0.15" />
+
+    <RatingBar
+        android:layout_width="match_parent"
+
+        android:saveEnabled="true"
+        android:progressBackgroundTint="@color/text_shadow"
+        android:backgroundTintMode="@color/text_shadow"
+        android:progressBackgroundTintMode="@color/text_shadow"
+
+        android:stepSize="0.5"
+        android:backgroundTint="@color/text_shadow"
+        android:numStars="5"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar_scroll" />
+</LinearLayout>

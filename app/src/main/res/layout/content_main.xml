@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:id="@+id/backgoundacti"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_marginTop="50dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ali.shiva.Main2Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="85dp"
+            app:cardElevation="4dp"
+            android:padding="5dp"
+            android:elevation="5dp"
+            android:visibility="invisible"
+            android:id="@+id/imageViewsun"
+            app:cardCornerRadius="2dp"
+            app:cardMaxElevation="3dp"
+            android:layout_height="220dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barchart2"
+
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </com.github.mikephil.charting.charts.BarChart>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imageViewsun"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:elevation="6dp"
+            android:visibility="invisible"
+            android:id="@+id/ver2"
+            app:cardMaxElevation="5dp"
+            android:padding="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="90dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/heder2"
+                    android:background="@color/iron"
+                    android:layout_height="33dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/options"
+                    android:layout_alignParentRight="true"
+                    android:padding="1dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="30dp" />
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:text="اوقات شرعی"
+                    android:textSize="11dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/i3"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/jet"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="118dp"
+                        android:id="@+id/i32"
+                        android:textSize="11dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:text="تا اذان صبح:"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="60dp"
+                        android:textSize="10dp"
+                        android:layout_marginRight="118dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView3
+                        android:text="sssss"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="11dp"
+                        android:textStyle="italic"
+                        android:padding="4dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hejritxt" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/heder2"
+                    android:layout_height="wrap_content">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="@string/aznant"
+                        android:layout_marginRight="6dp"
+                        android:textSize="9dp"
+                        android:padding="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewazan" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="ggggg"
+                        android:layout_marginTop="7dp"
+                        android:paddingRight="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="9dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_below="@id/textViewazan"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold|italic"
+
+                        android:textDirection="rtl"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/azanetobetxt" />
+
+
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="@string/aftab"
+                        android:layout_width="wrap_content"
+                        android:textSize="9dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_alignRight="@+id/textViewazan"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/textView4"
+                        android:textSize="9dp"
+                        android:textStyle="bold|italic"
+                        android:shadowColor="@color/text_shadow1"
+                        android:shadowDx="1"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="60dp"
+                        android:textDirection="rtl"
+                        android:layout_alignRight="@+id/azanetobetxt"
+                        android:layout_gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aftabtxt" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="@string/goreh"
+                        android:layout_width="wrap_content"
+                        android:textSize="9dp"
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="105dp"
+                        android:layout_alignRight="@+id/textViewazan"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView55" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="aaaaaa"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/textView4"
+                        android:textSize="9dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="112dp"
+                        android:textDirection="rtl"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignRight="@+id/azanetobetxt"
+                        android:layout_gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gorehtxt" />
+
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="@string/gorub"
+                        android:layout_width="wrap_content"
+                        android:textSize="9dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="160dp"
+                        android:layout_alignRight="@+id/textViewazan"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView56" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="wwww"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/textView4"
+                        android:textSize="9dp"
+                        android:layout_marginTop="7dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="158dp"
+                        android:textDirection="rtl"
+                        android:layout_alignRight="@+id/azanetobetxt"
+                        android:layout_gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gorubtxt" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="@string/magreb"
+                        android:layout_width="wrap_content"
+                        android:textSize="9dp"
+                        android:layout_marginTop="6dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="205dp"
+                        android:layout_alignRight="@+id/textViewazan"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView57" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="tttt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/textView4"
+                        android:textSize="9dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="205dp"
+                        android:textDirection="rtl"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignRight="@+id/azanetobetxt"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/magrebtxt" />
+
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="@string/nimeh_shab"
+                        android:layout_width="wrap_content"
+                        android:textSize="9dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="250dp"
+                        android:layout_alignRight="@+id/textViewazan"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView58" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:text="qqqq"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/textView4"
+                        android:textSize="9dp"
+                        android:textStyle="bold|italic"
+                        android:layout_marginRight="254dp"
+                        android:textDirection="rtl"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignRight="@+id/azanetobetxt"
+                        android:layout_gravity="center|left"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nimehtxt" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/ver2"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:elevation="5dp"
+            android:visibility="invisible"
+            android:id="@+id/ver4"
+            app:cardMaxElevation="5dp"
+            android:padding="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="110dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTabLayout
+                    android:id="@+id/tabhost21"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:tabBackground="@drawable/tab_color_selector"
+                    android:minHeight="?attr/actionBarSize"
+                    android:soundEffectsEnabled="true"
+                    app:tabIndicatorColor="@color/iron2"
+                    app:tabSelectedTextColor="@color/colorAccent"
+                    />
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:id="@+id/pageview21"
+                    android:layout_below="@+id/tabhost21"
+                    android:layout_height="70dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

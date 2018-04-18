@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/iron"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarmenu"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentTop="true"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="آلارم ها"
+                        android:textSize="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="85dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/alarm" />
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:id="@+id/img331"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/apo"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardElevation="4dp"
+                android:id="@+id/vibreh_card"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/toolbarmenu"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textSize="12dp"
+                        android:paddingRight="5dp"
+                        android:text="ویبره در هنگام آلارم"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:src="@drawable/true1"
+                        android:id="@+id/img_vibreh"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="25dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/volume_card"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/vibreh_card"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:paddingRight="5dp"
+                        android:text="افزایش تدریجی صدای آلارم"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:src="@drawable/true1"
+                        android:id="@+id/img_volume"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="25dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/time_alarmc"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/volume_card"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="مدت زمان پخش آلارم"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/primary"
+                        android:padding="3dp"
+                        android:textSize="11dp"
+                        android:id="@+id/timealarmfrag"
+                        android:text="60 دقیقه"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:layout_width="75dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="invisible"
+                        android:id="@+id/spinnertimealarm"
+                        android:entries="@array/alarm_time_name"
+                        android:background="@color/accent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/delaytimec"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/time_alarmc"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="مدت زمان تاخیر آلارم"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/primary"
+                        android:padding="3dp"
+                        android:textSize="11dp"
+                        android:id="@+id/delaytimetxt"
+                        android:text="120 دقیقه قبل از اذان"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:layout_width="90dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="invisible"
+                        android:id="@+id/delaytimspin"
+                        android:entries="@array/alarm_interval_name"
+                        android:background="@color/accent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/betweenc"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/delaytimec"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="فاصله بین آلارم ها"
+                        android:paddingRight="5dp"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/primary"
+                        android:padding="3dp"
+                        android:textSize="11dp"
+                        android:id="@+id/betweentimetxt"
+                        android:text="الگوریتم هوشمند"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:layout_width="90dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="invisible"
+                        android:id="@+id/betweentimspin"
+                        android:entries="@array/intervel_betwen_alarm_name"
+                        android:background="@color/accent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/randomc"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/betweenc"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="طریقه پخش زنگ های هشدار"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/primary"
+                        android:padding="3dp"
+                        android:textSize="11dp"
+                        android:id="@+id/randomaltxt"
+                        android:text="تصادفی"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:layout_width="75dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="invisible"
+                        android:id="@+id/randomalspin"
+                        android:entries="@array/type_alarm_name"
+                        android:background="@color/accent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/typemusicc"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/randomc"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="انتخاب نوع آهنگ"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:padding="3dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrowpointtoright"
+                        android:layout_height="15dp" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/primary"
+                        android:padding="3dp"
+                        android:textSize="11dp"
+                        android:id="@+id/typemusictxt"
+                        android:text="تند"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                android:id="@+id/moazenc"
+                app:cardCornerRadius="4dp"
+                app:cardMaxElevation="5dp"
+                android:elevation="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/typemusicc"
+                android:layout_height="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="موذن"
+                        android:layout_height="wrap_content" />
+                    <com.example.ali.shiva.CustomTextView2
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/primary"
+                        android:padding="3dp"
+                        android:textSize="11dp"
+                        android:id="@+id/moazentxt"
+                        android:text="آغاضی"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:layout_width="75dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="invisible"
+                        android:id="@+id/moazenspin"
+                        android:entries="@array/type_moazen_name"
+                        android:background="@color/accent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

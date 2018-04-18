@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@drawable/behsht"
+    android:id="@+id/custom_toast_layout"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.ali.shiva.CustomTextView3
+            android:text="60"
+            android:layout_width="match_parent"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="72dp"
+            android:shadowRadius="2"
+            android:shadowColor="@color/grren"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:layout_marginRight="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewToast"
+            android:layout_weight="1" />
+    </RelativeLayout>
+
+</LinearLayout>

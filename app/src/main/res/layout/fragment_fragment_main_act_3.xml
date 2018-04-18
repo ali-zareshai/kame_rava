@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.shiva.Fragment_mainAct_3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.ali.shiva.CustomTextView3
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="13dp"
+            android:textSize="11dp"
+            android:textColor="@color/text_notif"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center|right"
+            android:layout_height="wrap_content"
+            android:id="@+id/monatebattxt" />
+    </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>

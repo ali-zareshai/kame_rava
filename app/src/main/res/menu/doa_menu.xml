@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ali.shiva.MainActivity">
+
+    <item
+        android:id="@+id/action_play"
+        android:orderInCategory="100"
+        android:title="@string/play"
+        android:icon="@drawable/play"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_pause"
+        android:orderInCategory="100"
+        android:title="@string/pause"
+        android:icon="@drawable/pause"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_exist"
+        android:orderInCategory="100"
+        android:title="@string/exist"
+        android:icon="@drawable/shutdown"
+        app:showAsAction="always|withText" />
+
+</menu>
