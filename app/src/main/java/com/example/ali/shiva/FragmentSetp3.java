@@ -2,18 +2,22 @@ package com.example.ali.shiva;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 
 public class FragmentSetp3 extends Fragment {
@@ -109,6 +113,7 @@ public class FragmentSetp3 extends Fragment {
     }
 
     private void setType(int i) {
+        String txttoast=null;
         switch (i){
             case 1:
                 editor.putBoolean("vibreh",false);///ویبره
@@ -119,6 +124,7 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_problem","5");//نوع سوال
                 editor.putString("problem_level","3");//سطح سوالات
                 editor.putString("alarma","0");//هشدار دوم
+                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:30 ثانیه-فاصله آلارم ها:30 دقیقه-نوع آهنگ:موزیکال-نوع سوال:ندارد-سطح سوال:آسان-بدون هشدار دوم";
                 break;
             case 2:
                 editor.putBoolean("vibreh",false);///ویبره
@@ -129,6 +135,8 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_problem","2");//نوع سوال
                 editor.putString("problem_level","3");//سطح سوالات
                 editor.putString("alarma","0");//هشدار دوم
+                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:10 دقیقه-نوع آهنگ:موزیکال-نوع سوال:کپچا ریاضی-سطح سوال:آسان-بدون هشدار دوم";
+
                 break;
             case 3:
                 editor.putBoolean("vibreh",true);///ویبره
@@ -139,6 +147,8 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_problem","1");//نوع سوال
                 editor.putString("problem_level","4");//سطح سوالات
                 editor.putString("alarma","60");//هشدار دوم
+                txttoast="باویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:5 دقیقه-نوع آهنگ:ملایم-نوع سوال:کپچا معمولی-سطح سوال:متوسط-هشدار دوم:60ثانیه";
+
                 break;
             case 4:
                 editor.putBoolean("vibreh",true);///ویبره
@@ -149,6 +159,8 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_problem","0");//نوع سوال
                 editor.putString("problem_level","5");//سطح سوالات
                 editor.putString("alarma","120");//هشدار دوم
+                txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مسله ریاضی -سطح سوال:سخت -هشدار دوم:120ثانیه";
+
                 break;
             case 5:
                 editor.putBoolean("vibreh",true);///ویبره
@@ -159,9 +171,18 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_problem","7");//نوع سوال
                 editor.putString("problem_level","5");//سطح سوالات
                 editor.putString("alarma","180");//هشدار دوم
+                txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مرتب سازی -سطح سوال:سخت -هشدار دوم:180ثانیه";
+
                 break;
         }
         editor.apply();
+//        Toast toast = Toast.makeText(getContext(), txttoast, Toast.LENGTH_LONG);
+////        toast.setGravity(Gravity.CENTER,-10,0);
+////        View view = toast.getView();
+////        view.setBackgroundColor(Color.LTGRAY);
+////        toast.show();
+        Snackbar snackbar=Snackbar.make(getActivity().getWindow().getDecorView().getRootView(),txttoast,7500);
+        snackbar.show();
     }
 
     private void inVisiableAll(){

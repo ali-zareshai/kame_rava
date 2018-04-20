@@ -15,7 +15,7 @@ public class StartAlarmBor extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.e("heloooo","man dar startbo2 asatam!!!");
+//        Log.e("heloooo","man dar startbo2 asatam!!!");
         intent1=new Intent(context,SlideBar.class);
         intent1.putExtra("code","1");
         ////////// Start alarm final /////////////////

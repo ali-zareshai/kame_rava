@@ -30,6 +30,9 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         Boolean b=true;
         SP= PreferenceManager.getDefaultSharedPreferences(context);
         editor = SP.edit();
+        if (SP.getBoolean("enableapp",true)){
+
+
         if (b){
             db = new DatabaseHandler(context);
             db.update_Azan("T");
@@ -54,6 +57,9 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         StaticWakeLock.lockOn(context);
         Intent math=new Intent(context,StartAlarm2.class);
         context.startService(math);
+        }else {
+            Log.e("enableapp","app is disable");
+        }
 
 
 

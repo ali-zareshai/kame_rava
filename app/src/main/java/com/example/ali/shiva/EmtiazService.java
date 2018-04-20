@@ -22,7 +22,7 @@ public class EmtiazService extends Service {
         Intent myIntent = new Intent(getApplicationContext(), EmtiazBorder.class);
         pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         alarmManager.cancel(pendingIntent);
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+60000, pendingIntent);
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+120000, pendingIntent);
 
 
         return START_NOT_STICKY;

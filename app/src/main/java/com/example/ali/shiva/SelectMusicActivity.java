@@ -10,6 +10,7 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.content.FileProvider;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -45,7 +46,8 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class SelectMusicActivity extends Activity {
+public class SelectMusicActivity extends Activity
+{
     ImageButton btadd;
     Spinner spinner;
     CheckBox checkBox;
@@ -186,7 +188,7 @@ public class SelectMusicActivity extends Activity {
             public void onClick(View v) {
                 System.gc();
                 Intent intent = new Intent(android.content.Intent.ACTION_GET_CONTENT);
-                Uri data = Uri.parse("file:///sdcard");
+                Uri data = Uri.parse("content:///sdcard");
                 String type = "audio/*";
                 intent.setDataAndType(data, type);
                 startActivityForResult(intent, ACTIVITY_CHOOSE_FILE);
@@ -262,7 +264,7 @@ public class SelectMusicActivity extends Activity {
         if (!ahangs.equals("0")){
             adapterRecyc=new AdapterRecyc(getList(ahangs));
             ///
-            Log.e("list","OKKK");
+//            Log.e("list","OKKK");
             RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(getApplicationContext());
             recyclerView.setLayoutManager(layoutManager);
             recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -286,7 +288,7 @@ public class SelectMusicActivity extends Activity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.e("selectmusic","first method ActivityResult");
+//        Log.e("selectmusic","first method ActivityResult");
         if (requestCode == ACTIVITY_CHOOSE_FILE) {
             if (data != null) {
                 uri = data.getData();

@@ -18,7 +18,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +32,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
     ImageView homedialog,fastoptionbtn,shownotiimg;
     SharedPreferences.Editor editor;
     public static DatabaseHandler db;
+    Switch aSwitch;
 
 
 
@@ -87,6 +90,8 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
 
         }
 
+        aSwitch.setChecked(preferences.getBoolean("enableapp", true));
+
 
     }
 
@@ -105,6 +110,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         datadiv=(CardView)view.findViewById(R.id.datadiv);
         homedialog=(ImageView)view.findViewById(R.id.homedialog);
         fastoptionbtn=(ImageView)view.findViewById(R.id.fastoptionbtn);
+        aSwitch=(Switch)view.findViewById(R.id.switchenable);
 
 
 
@@ -130,6 +136,29 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         editor = preferences.edit();
         geo_card.setOnClickListener(this);
+        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    getContext().startService(new Intent(getContext(),AlarmService.class));
+                    editor.putBoolean("enableapp",true);
+                    ////////////
+                    Toast toast = Toast.makeText(getContext(), "برنامه فعال شد", Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.setBackgroundColor(Color.GREEN);
+                    toast.show();
+                }else {
+                    getContext().stopService(new Intent(getContext(),AlarmService.class));
+                    editor.putBoolean("enableapp",false);
+                    /////////
+                    Toast toast = Toast.makeText(getContext(), "برنامه غیرفعال شد", Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.setBackgroundColor(Color.RED);
+                    toast.show();
+                }
+                editor.apply();
+            }
+        });
         updateText();
         
         

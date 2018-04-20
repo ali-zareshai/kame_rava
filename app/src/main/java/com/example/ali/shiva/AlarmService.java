@@ -81,6 +81,8 @@ public class AlarmService extends Service {
         }else{
             lang=city.split(":");
         }
+        Log.e("lang1 month:::",String.valueOf(convert_date.getMonth()));
+        Log.e("lang0 day:::",String.valueOf(convert_date.getDay()));
 
 
         paryer.SetGeo(Double.parseDouble(lang[1]), Double.parseDouble(lang[0]), convert_date.getMonth(), convert_date.getDay());

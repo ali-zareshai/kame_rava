@@ -16,12 +16,12 @@ public class CheckFinalService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.e("alarmfinalservice","srart alarmfinal service");
+//        Log.e("alarmfinalservice","srart alarmfinal service");
         alarmManager = (AlarmManager) getApplicationContext().getSystemService(Context.ALARM_SERVICE);
         Intent myIntent = new Intent(getApplicationContext(), CheckFinalReceiver.class);
         pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         alarmManager.cancel(pendingIntent);
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+240000, pendingIntent);
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+100000, pendingIntent);
 
         return START_STICKY;
     }

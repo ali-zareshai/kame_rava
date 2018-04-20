@@ -40,6 +40,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.io.File;
@@ -467,12 +468,18 @@ public class Main2Activity extends AppCompatActivity
 
 
         sethourse(this);
+        if (!SP.getBoolean("enableapp",true)){
+            Toast toast = Toast.makeText(this, "برنامه غیرفعال است", Toast.LENGTH_LONG);
+            View view = toast.getView();
+            view.setBackgroundColor(Color.RED);
+            toast.show();
+        }
 
     }
     public static void sethourse(Context context){
         Calendar cal = Calendar.getInstance();
         Paryer paryer=new Paryer();
-        Convert_Date convert_date=new Convert_Date();
+        Convert_Date convert_date3=new Convert_Date();
         ////////////////////
         String[] lang=new String[2];
         SharedPreferences SP;
@@ -495,7 +502,16 @@ public class Main2Activity extends AppCompatActivity
         }else{
             lang=city.split(":");
         }
-        paryer.SetGeo(Double.parseDouble(lang[1]),Double.parseDouble(lang[0]),convert_date.getMonth(),convert_date.getDay());
+        int year22 = cal.get(Calendar.YEAR);
+        int month = cal.get(Calendar.MONTH);
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+        int week = cal.get(Calendar.DAY_OF_WEEK);
+
+        String today=convert_date3.gregorian_to_jalali(year22,month+1,day,week-1);
+
+
+        paryer.SetGeo(Double.parseDouble(lang[1]),Double.parseDouble(lang[0]),convert_date3.getMonth(),convert_date3.getDay());
+
 
 
 
