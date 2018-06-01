@@ -176,13 +176,13 @@ public class FragmentSetp3 extends Fragment {
                 break;
         }
         editor.apply();
-//        Toast toast = Toast.makeText(getContext(), txttoast, Toast.LENGTH_LONG);
-////        toast.setGravity(Gravity.CENTER,-10,0);
-////        View view = toast.getView();
-////        view.setBackgroundColor(Color.LTGRAY);
-////        toast.show();
-        Snackbar snackbar=Snackbar.make(getActivity().getWindow().getDecorView().getRootView(),txttoast,7500);
-        snackbar.show();
+        Toast toast = Toast.makeText(getContext(), txttoast, Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER,-10,0);
+        View view = toast.getView();
+        view.setBackgroundColor(Color.LTGRAY);
+        toast.show();
+//        Snackbar snackbar=Snackbar.make(getActivity().getWindow().getDecorView().getRootView(),txttoast,7500);
+//        snackbar.show();
     }
 
     private void inVisiableAll(){

@@ -234,12 +234,12 @@ public class ChangeNotifi {
     }
     public Bitmap buildUpdate(String time)
     {
-        Bitmap myBitmap = Bitmap.createBitmap(220, 25, Bitmap.Config.ARGB_4444);
+        Bitmap myBitmap = Bitmap.createBitmap(220, 25, Bitmap.Config.ARGB_8888);
         Canvas myCanvas = new Canvas(myBitmap);
         Paint paint = new Paint();
         Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/yekan.ttf");
         paint.setTypeface(clock);
-        paint.setAntiAlias(true);
+//        paint.setAntiAlias(true);
         paint.setSubpixelText(true);
         paint.setAlpha(255);
         paint.setDither(true);

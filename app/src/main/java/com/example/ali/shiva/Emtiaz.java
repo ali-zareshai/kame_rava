@@ -124,6 +124,7 @@ public class Emtiaz {
         mBuilder.setContentTitle("سلام");
         mBuilder.setContentText("آیا موفق شدی نمازت را به موقع بخوانی؟");
         mBuilder.setTicker("یک سوال!!!");
+//        mBuilder.soun
 
         mNotificationManager =
 
