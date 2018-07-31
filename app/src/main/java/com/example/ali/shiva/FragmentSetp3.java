@@ -179,7 +179,7 @@ public class FragmentSetp3 extends Fragment {
         Toast toast = Toast.makeText(getContext(), txttoast, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER,-10,0);
         View view = toast.getView();
-        view.setBackgroundColor(Color.LTGRAY);
+        view.setBackgroundColor(Color.DKGRAY);
         toast.show();
 //        Snackbar snackbar=Snackbar.make(getActivity().getWindow().getDecorView().getRootView(),txttoast,7500);
 //        snackbar.show();

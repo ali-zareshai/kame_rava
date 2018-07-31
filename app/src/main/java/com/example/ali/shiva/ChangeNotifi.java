@@ -239,10 +239,11 @@ public class ChangeNotifi {
         Paint paint = new Paint();
         Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/yekan.ttf");
         paint.setTypeface(clock);
-//        paint.setAntiAlias(true);
-        paint.setSubpixelText(true);
-        paint.setAlpha(255);
-        paint.setDither(true);
+        paint.setAntiAlias(true);
+//        paint.setSubpixelText(true);
+//        paint.setAlpha(255);
+//        paint.setDither(true);
+        paint.setFakeBoldText(true);
         paint.setLinearText(true);
         paint.setColor(Color.WHITE);
         paint.setTextSize(13);
@@ -251,16 +252,19 @@ public class ChangeNotifi {
     }
     public Bitmap buildUpdate2(String time)
     {
-        Bitmap myBitmap = Bitmap.createBitmap(220, 25, Bitmap.Config.ARGB_4444);
+        Bitmap myBitmap = Bitmap.createBitmap(220, 25, Bitmap.Config.ARGB_8888);
         Canvas myCanvas = new Canvas(myBitmap);
         Paint paint = new Paint();
         Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/Vazir.ttf");
         paint.setTypeface(clock);
-        paint.setAlpha(255);
-        paint.setDither(true);
+//        paint.setAlpha(255);
+//        paint.setDither(true);
+
+        paint.setFakeBoldText(true);
+
         paint.setLinearText(true);
         paint.setAntiAlias(true);
-        paint.setSubpixelText(true);
+//        paint.setSubpixelText(true);
 //        paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.WHITE);
         paint.setTextSize(12);
