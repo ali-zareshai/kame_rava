@@ -363,58 +363,7 @@ public class RandomActivit extends Activity implements View.OnClickListener {
     }
 
     private int fruits(int i) {
-        switch (i) {
-            case 0:
-                return R.drawable.f1;
-
-            case 1:
-                return R.drawable.f2;
-
-            case 2:
-                return R.drawable.f3;
-
-            case 3:
-                return R.drawable.f4;
-
-            case 4:
-                return R.drawable.f5;
-
-            case 5:
-                return R.drawable.f6;
-
-            case 6:
-                return R.drawable.f7;
-
-            case 7:
-                return R.drawable.f8;
-
-            case 8:
-                return R.drawable.f9;
-
-            case 9:
-                return R.drawable.f10;
-
-            case 10:
-                return R.drawable.f11;
-
-            case 11:
-                return R.drawable.f12;
-
-            case 12:
-                return R.drawable.f13;
-
-            case 13:
-                return R.drawable.f14;
-
-            case 14:
-                return R.drawable.f15;
-
-            case 15:
-                return R.drawable.f16;
-
-            default:
-                return R.drawable.f1;
-        }
+        return 0;
     }
 
 

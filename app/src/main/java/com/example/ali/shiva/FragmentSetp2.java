@@ -38,13 +38,6 @@ public class FragmentSetp2 extends Fragment {
         View view=inflater.inflate(R.layout.fragment_fragment_setp2,container,false);
         spinner=(Spinner)view.findViewById(R.id.spiner_set2);
 //        next=(Button)view.findViewById(R.id.next1);
-        MySpinnerAdapter adapter5 = new MySpinnerAdapter(
-                getContext(),
-                R.layout.view_spinner_item,
-                Arrays.asList(getResources().getStringArray(R.array.city_name_sp))
-        );
-        spinner.setAdapter(adapter5);
-
         array=getResources().getStringArray(R.array.city_value_sp);
         preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         editor = preferences.edit();
@@ -53,6 +46,17 @@ public class FragmentSetp2 extends Fragment {
         int indexOf = java.util.Arrays.asList(array2).indexOf(preferences.getString("city","31.89:54.36"));
         Log.e("index of",String.valueOf(indexOf));
         spinner.setSelection(indexOf-1);
+
+        MySpinnerAdapter adapter5 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.city_name_sp))
+        );
+        spinner.setAdapter(adapter5);
+
+
+
+
 //        next.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

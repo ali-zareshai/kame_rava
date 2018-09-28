@@ -37,7 +37,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/f3"
             android:id="@+id/imageViewshgel" />
 
         <ImageView
@@ -61,7 +60,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
         android:layout_width="0dp"
          android:layout_height="100dp"
          android:scaleType="fitCenter"
-        app:srcCompat="@drawable/f16"
         android:layout_weight="1"
         android:tag="1"
         android:id="@+id/imageButton100" />
@@ -69,7 +67,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="2"
             android:id="@+id/imageButton101" />
@@ -77,7 +74,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="3"
             android:id="@+id/imageButton102" />
@@ -85,7 +81,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="4"
             android:id="@+id/imageButton103" />
@@ -99,7 +94,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="5"
             android:id="@+id/imageButton104" />
@@ -107,7 +101,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="6"
             android:id="@+id/imageButton105" />
@@ -115,7 +108,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="7"
             android:id="@+id/imageButton106" />
@@ -123,7 +115,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="8"
             android:id="@+id/imageButton107" />
@@ -137,7 +128,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="9"
             android:id="@+id/imageButton108" />
@@ -145,7 +135,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="10"
             android:id="@+id/imageButton109" />
@@ -153,7 +142,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="11"
             android:id="@+id/imageButton110" />
@@ -161,7 +149,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="12"
             android:id="@+id/imageButton111" />
@@ -176,7 +163,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="13"
             android:id="@+id/imageButton112" />
@@ -184,7 +170,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="14"
             android:id="@+id/imageButton113" />
@@ -192,7 +177,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="15"
             android:id="@+id/imageButton114" />
@@ -200,7 +184,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/f16"
             android:layout_weight="1"
             android:tag="16"
             android:id="@+id/imageButton115" />

@@ -67,13 +67,13 @@ public class HeaderOstan extends Dialog implements
         preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         editor = preferences.edit();
         array2=getContext().getResources().getStringArray(R.array.city_name_sp);
-        int indexOf = java.util.Arrays.asList(array).indexOf(preferences.getString("city","31.89:54.36"));
+        int indexOf = java.util.Arrays.asList(array).indexOf(preferences.getString("city","31.89:54.36"))+1;
         spinner.setSelection(indexOf);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                city33=array[position];
+                city33=array[position-1];
                 editor.putString("city",city33);
                 editor.apply();
 //                FragmentMain fragmentMain=new FragmentMain();

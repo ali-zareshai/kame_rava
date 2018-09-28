@@ -85,7 +85,7 @@ public class PerfernceActivity extends AppCompatActivity {
                 negativeButton, positiveButton, false, new DialogUtils.DialogListener() {
                     @Override
                     public void onPositiveButton() {
-                        yesDialog();
+                       yesDialog();
                     }
 
                     @Override
