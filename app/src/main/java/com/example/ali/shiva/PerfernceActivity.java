@@ -1,6 +1,7 @@
 package com.example.ali.shiva;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,8 +11,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.viethoa.DialogUtils;
+
 public class PerfernceActivity extends AppCompatActivity {
     SharedPreferences SP;
+    Dialog myDialog=null;
 
 
 
@@ -43,35 +47,56 @@ public class PerfernceActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-//        super.onBackPressed();
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        super.onBackPressed();
+//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+//
+//        // set title
+//        alertDialogBuilder.setTitle("ذخیره؟");
+//
+//        // set dialog message
+//        alertDialogBuilder
+//                .setMessage("آیا می خواهید تنظیمات ذخیره شود؟")
+//                .setCancelable(false)
+//                .setPositiveButton("بله",new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog,int id) {
+//                        yesDialog();
+//                    }
+//                })
+//                .setNegativeButton("خیر",new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog,int id) {
+//                        dialog.cancel();
+////                        startActivity(new Intent(PerfernceActivity.this,Main2Activity.class));
+//                        finish();
+//
+//                    }
+//                });
+//
+//        // create alert dialog
+//        AlertDialog alertDialog = alertDialogBuilder.create();
+//
+//        // show it
+//        alertDialog.show();
+        String title = "ذخیره";
+        String message = "آیا می خواهید تنظیمات ذخیره شود";
+        String negativeButton = "خیر";
+        String positiveButton = "بله";
 
-        // set title
-        alertDialogBuilder.setTitle("ذخیره؟");
-
-        // set dialog message
-        alertDialogBuilder
-                .setMessage("آیا می خواهید تنظیمات ذخیره شود؟")
-                .setCancelable(false)
-                .setPositiveButton("بله",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
+        myDialog = DialogUtils.createDialogMessage(this, title, message,
+                negativeButton, positiveButton, false, new DialogUtils.DialogListener() {
+                    @Override
+                    public void onPositiveButton() {
                         yesDialog();
                     }
-                })
-                .setNegativeButton("خیر",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        dialog.cancel();
-//                        startActivity(new Intent(PerfernceActivity.this,Main2Activity.class));
-                        finish();
 
+                    @Override
+                    public void onNegativeButton() {
+                        myDialog.cancel();
                     }
                 });
 
-        // create alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
-
-        // show it
-        alertDialog.show();
+        if (myDialog != null && !myDialog.isShowing()) {
+            myDialog.show();
+        }
 
     }
 
