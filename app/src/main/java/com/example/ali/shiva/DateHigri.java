@@ -31,7 +31,7 @@ public class DateHigri {
             long todaymili = today.getTimeInMillis() + adjustmili;
             today.setTimeInMillis(todaymili);
         }
-        double day = today.get(Calendar.DAY_OF_MONTH)-2;
+        double day = today.get(Calendar.DAY_OF_MONTH);
         double  month = today.get(Calendar.MONTH);
         double  year = today.get(Calendar.YEAR);
 

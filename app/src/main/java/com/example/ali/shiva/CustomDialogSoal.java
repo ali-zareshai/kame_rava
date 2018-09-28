@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 public class CustomDialogSoal extends Dialog{
     public Activity c;
     public Dialog d;
@@ -44,6 +46,13 @@ public class CustomDialogSoal extends Dialog{
         ok=(Button)findViewById(R.id.oksoaldialog);
         setEmptyback();
         setColor();
+
+        MySpinnerAdapter adapter = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(context.getResources().getStringArray(R.array.type_name))
+        );
+        spinner.setAdapter(adapter);
         //////////////////////////////////////////////////
 
 

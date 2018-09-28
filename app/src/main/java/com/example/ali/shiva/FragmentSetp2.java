@@ -17,6 +17,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 
 public class FragmentSetp2 extends Fragment {
     Spinner spinner;
@@ -36,6 +38,12 @@ public class FragmentSetp2 extends Fragment {
         View view=inflater.inflate(R.layout.fragment_fragment_setp2,container,false);
         spinner=(Spinner)view.findViewById(R.id.spiner_set2);
 //        next=(Button)view.findViewById(R.id.next1);
+        MySpinnerAdapter adapter5 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.city_name_sp))
+        );
+        spinner.setAdapter(adapter5);
 
         array=getResources().getStringArray(R.array.city_value_sp);
         preferences = PreferenceManager.getDefaultSharedPreferences(getContext());

@@ -32,12 +32,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
+
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -97,6 +92,12 @@ public class SelectMusicActivity extends Activity
         spinner=(Spinner)findViewById(R.id.spinner);
         checkBox=(CheckBox)findViewById(R.id.checkBoxselect);
         recyclerView=(RecyclerView)findViewById(R.id.recycselect) ;
+        MySpinnerAdapter adapter5 = new MySpinnerAdapter(
+                getApplicationContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.type_moazen_value))
+        );
+        spinner.setAdapter(adapter5);
 
 //        recyclerView.addOnItemTouchListener(
 //                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {

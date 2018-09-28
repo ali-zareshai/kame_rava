@@ -29,7 +29,6 @@
                 android:id="@+id/spiner_set2"
                 android:layout_centerHorizontal="true"
                 android:padding="10dp"
-                android:entries="@array/city_name_sp"
                 android:background="@color/accent"
                 android:layout_height="wrap_content"/>
             <com.example.ali.shiva.CustomTextView2

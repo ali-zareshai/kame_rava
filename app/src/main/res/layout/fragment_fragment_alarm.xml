@@ -168,7 +168,6 @@
                         android:layout_marginLeft="20dp"
                         android:visibility="invisible"
                         android:id="@+id/spinnertimealarm"
-                        android:entries="@array/alarm_time_name"
                         android:background="@color/accent"
                         android:layout_height="wrap_content"/>
 
@@ -216,7 +215,6 @@
                         android:layout_marginLeft="15dp"
                         android:visibility="invisible"
                         android:id="@+id/delaytimspin"
-                        android:entries="@array/alarm_interval_name"
                         android:background="@color/accent"
                         android:layout_height="wrap_content"/>
 
@@ -264,7 +262,6 @@
                         android:layout_marginLeft="15dp"
                         android:visibility="invisible"
                         android:id="@+id/betweentimspin"
-                        android:entries="@array/intervel_betwen_alarm_name"
                         android:background="@color/accent"
                         android:layout_height="wrap_content"/>
 
@@ -312,7 +309,6 @@
                         android:layout_marginLeft="15dp"
                         android:visibility="invisible"
                         android:id="@+id/randomalspin"
-                        android:entries="@array/type_alarm_name"
                         android:background="@color/accent"
                         android:layout_height="wrap_content"/>
 
@@ -406,7 +402,6 @@
                         android:layout_marginLeft="15dp"
                         android:visibility="invisible"
                         android:id="@+id/moazenspin"
-                        android:entries="@array/type_moazen_name"
                         android:background="@color/accent"
                         android:layout_height="wrap_content"/>
 

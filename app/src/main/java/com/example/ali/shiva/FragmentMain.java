@@ -27,7 +27,7 @@ import android.widget.Toast;
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
     CardView geo_card,alarmdiv,soaldiv,doadiv,datadiv;
-    static TextView ostan,soaltxt,hoshdare2txt,ahd2txt;
+    static TextView ostan,soaltxt,ahd2txt;
     SharedPreferences preferences;
     ImageView homedialog,fastoptionbtn,shownotiimg;
     SharedPreferences.Editor editor;
@@ -67,11 +67,11 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 break;
         }
         /////////////////////////////////////////
-        String c3=preferences.getString("alarma","0");
-        String[] val2=getContext().getResources().getStringArray(R.array.alarm_a_value);
-        String[] name2=getContext().getResources().getStringArray(R.array.alarm_a_name);
-        int indexOf3 = java.util.Arrays.asList(val2).indexOf(c3);
-        hoshdare2txt.setText(name2[indexOf3]);
+//        String c3=preferences.getString("alarma","0");
+//        String[] val2=getContext().getResources().getStringArray(R.array.alarm_a_value);
+//        String[] name2=getContext().getResources().getStringArray(R.array.alarm_a_name);
+//        int indexOf3 = java.util.Arrays.asList(val2).indexOf(c3);
+//        hoshdare2txt.setText(name2[indexOf3]);
         //////////////////////////////////////////
 //        preferences2 = PreferenceManager.getDefaultSharedPreferences(getContext());
         if (db.get_Ahd()){
@@ -104,7 +104,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         geo_card=(CardView)view.findViewById(R.id.georo);
         ostan=(TextView)view.findViewById(R.id.ostanup);
         soaltxt=(TextView)view.findViewById(R.id.soaltxt);
-        hoshdare2txt=(TextView)view.findViewById(R.id.hoshdare2txt);
+//        hoshdare2txt=(TextView)view.findViewById(R.id.hoshdare2txt);
         ahd2txt=(TextView)view.findViewById(R.id.ahd2txt);
         shownotiimg=(ImageView)view.findViewById(R.id.shownotiimg);
         datadiv=(CardView)view.findViewById(R.id.datadiv);

@@ -17,6 +17,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 public class CustomDialogClass extends Dialog implements
         android.view.View.OnClickListener {
 
@@ -50,6 +52,13 @@ public class CustomDialogClass extends Dialog implements
         ok.setOnClickListener(this);
         gps.setOnClickListener(this);
         spinner=(Spinner)findViewById(R.id.spinnerdialog);
+
+        MySpinnerAdapter adapter = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(context.getResources().getStringArray(R.array.city_name_sp))
+        );
+        spinner.setAdapter(adapter);
 
         array=getContext().getResources().getStringArray(R.array.city_value_sp);
 

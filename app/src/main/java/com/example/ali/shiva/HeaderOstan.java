@@ -19,6 +19,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 public class HeaderOstan extends Dialog implements
         android.view.View.OnClickListener {
 
@@ -53,6 +55,12 @@ public class HeaderOstan extends Dialog implements
         ok.setOnClickListener(this);
         gps.setOnClickListener(this);
         spinner=(Spinner)findViewById(R.id.spinnerdialog);
+        MySpinnerAdapter adapter2 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(context.getResources().getStringArray(R.array.city_name))
+        );
+        spinner.setAdapter(adapter2);
 
         array=getContext().getResources().getStringArray(R.array.city_value_sp);
 

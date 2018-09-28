@@ -20,6 +20,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 
 public class FragmentAlarm extends Fragment implements View.OnClickListener {
     ImageView vibreh_img,volume_img;
@@ -94,6 +96,12 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         setmoazn();
 
 ///////////////////////////////////// 11111111111111111111111111111111111111111111111111111111111
+        MySpinnerAdapter adapter = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.alarm_time_name))
+        );
+        time_alarm.setAdapter(adapter);
         time_alarm.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -109,6 +117,12 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
             }
         });
         /////////////////////////////////////////////////// 22222222222222222222222222222222222222222222222222222
+        MySpinnerAdapter adapter2 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.alarm_interval_name))
+        );
+        delaytispin.setAdapter(adapter2);
         delaytispin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -125,6 +139,12 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
             }
         });
         /////////////////////////333333333333333333333333333333333333333333
+        MySpinnerAdapter adapter3 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.intervel_betwen_alarm_name))
+        );
+        betweentimspin.setAdapter(adapter3);
         betweentimspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -140,6 +160,12 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
             }
         });
         ///////////////////4444444444444444444444444444444444444444444444444444
+        MySpinnerAdapter adapter4 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.type_alarm_name))
+        );
+        randomalspin.setAdapter(adapter4);
         randomalspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -155,6 +181,12 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
             }
         });
         /////////////////////5555555555555555555555555555555
+        MySpinnerAdapter adapter5 = new MySpinnerAdapter(
+                getContext(),
+                R.layout.view_spinner_item,
+                Arrays.asList(getResources().getStringArray(R.array.type_moazen_name))
+        );
+        moazenspin.setAdapter(adapter5);
         moazenspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
