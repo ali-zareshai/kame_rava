@@ -37,7 +37,7 @@ public class EmtiazActivity extends AppCompatActivity {
     public void onBackPressed() {
 //        super.onBackPressed();
         if (excit){
-            startActivity(new Intent(getApplicationContext(),Main2Activity.class));
+//            startActivity(new Intent(getApplicationContext(),Main2Activity.class));
             finish();
         }else {
             StaticWakeLock.lockOff(getApplicationContext());

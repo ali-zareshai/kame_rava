@@ -13,11 +13,11 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class HelpActivity extends Activity {
-    @Override
-    public void onBackPressed() {
-//        super.onBackPressed();
-        startActivity(new Intent(HelpActivity.this,Main2Activity.class));
-    }
+//    @Override
+//    public void onBackPressed() {
+////        super.onBackPressed();
+//        startActivity(new Intent(HelpActivity.this,Main2Activity.class));
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

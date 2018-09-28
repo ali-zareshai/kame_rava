@@ -61,7 +61,7 @@ public class PerfernceActivity extends AppCompatActivity {
                 .setNegativeButton("خیر",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
                         dialog.cancel();
-                        startActivity(new Intent(PerfernceActivity.this,Main2Activity.class));
+//                        startActivity(new Intent(PerfernceActivity.this,Main2Activity.class));
                         finish();
 
                     }
@@ -90,7 +90,7 @@ public class PerfernceActivity extends AppCompatActivity {
 //            changeNotifi.cancelNotification(001);
 //        }
         finish();
-        startActivity(new Intent(PerfernceActivity.this,Main2Activity.class));
+//        startActivity(new Intent(PerfernceActivity.this,Main2Activity.class));
     }
 
 //    public static class PrefsFragment extends PreferenceFragment {

@@ -226,7 +226,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 getContext().stopService(new Intent(getContext(),AlarmService.class));
                 getContext().startService(new Intent(getContext(),AlarmService.class));
                 Toast.makeText(getContext(), "تنظیمات ذخیره شد", Toast.LENGTH_SHORT).show();
-                getContext().startActivity(new Intent(getContext(),Main2Activity.class));
+//                getContext().startActivity(new Intent(getContext(),Main2Activity.class));
                 getActivity().finish();
                 break;
             case R.id.fastoptionbtn:

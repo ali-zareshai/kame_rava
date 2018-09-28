@@ -59,11 +59,11 @@ public class ScrollingActivity extends Activity {
         });
     }
 
-    @Override
-    public void onBackPressed() {
-//        super.onBackPressed();
-        startActivity(new Intent(ScrollingActivity.this,Main2Activity.class));
-    }
+//    @Override
+//    public void onBackPressed() {
+////        super.onBackPressed();
+//        startActivity(new Intent(ScrollingActivity.this,Main2Activity.class));
+//    }
 
     protected void showInputDialog() {
 
