@@ -8,10 +8,7 @@
             android:id="@+id/nav_rotbeh"
             android:icon="@drawable/rating"
             android:title="مشاهده رتبه روز گذشته" />
-        <item
-            android:id="@+id/nav_test"
-            android:icon="@drawable/test"
-            android:title="پیش نمایش" />
+
 
 
 

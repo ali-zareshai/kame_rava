@@ -56,7 +56,7 @@
     </string-array>
 
     <string-array name="intervel_betwen_alarm_name">
-        <item>الگوریتم هوشمند</item>
+        <item>هوشمند</item>
         <item>متناوب</item>
         <item>5 دقیقه</item>
         <item>10 دقیقه</item>
@@ -212,8 +212,7 @@
     <string-array name="type_name">
     <item>بدون سوال</item>
     <item>مسله ریاضی</item>
-    <item>کپچا معمولی</item>
-    <item>کپچا ریاضی</item>
+    <item>نوشتن متن</item>
     <item>تکان دادن موبایل</item>
     <item>تطابق رنگ ها</item>
     <item>مرتب سازی</item>
@@ -224,7 +223,6 @@
         <item>5</item>
         <item>0</item>
         <item>1</item>
-        <item>2</item>
         <item>3</item>
         <item>6</item>
         <item>7</item>

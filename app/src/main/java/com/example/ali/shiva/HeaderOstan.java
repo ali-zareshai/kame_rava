@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HeaderOstan extends Dialog implements
         android.view.View.OnClickListener {
@@ -89,6 +90,8 @@ public class HeaderOstan extends Dialog implements
                 Main2Activity.sethourse(getContext());
                 context.stopService(new Intent(getContext(),AlarmService.class));
                 context.startService(new Intent(getContext(),AlarmService.class));
+                Toast.makeText(context, "لطفا برنامه را دوباره راه اندازی کنید", Toast.LENGTH_LONG).show();
+//                android.os.Process.killProcess(android.os.Process.myPid());
                 dismiss();
                 break;
             case R.id.gpsdialog1:

@@ -26,7 +26,7 @@ import android.widget.Toast;
 
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
-    CardView geo_card,alarmdiv,soaldiv,hoshdare2div,doadiv,datadiv;
+    CardView geo_card,alarmdiv,soaldiv,doadiv,datadiv;
     static TextView ostan,soaltxt,hoshdare2txt,ahd2txt;
     SharedPreferences preferences;
     ImageView homedialog,fastoptionbtn,shownotiimg;
@@ -120,8 +120,6 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         soaldiv=(CardView)view.findViewById(R.id.soaldiv);
         soaldiv.setOnClickListener(this);
 
-        hoshdare2div=(CardView)view.findViewById(R.id.hoshdare2div);
-        hoshdare2div.setOnClickListener(this);
 
         doadiv=(CardView)view.findViewById(R.id.doadiv);
         doadiv.setOnClickListener(this);
@@ -195,11 +193,11 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 cdd2.setCanceledOnTouchOutside(false);
                 cdd2.show();
                 break;
-            case R.id.hoshdare2div:
-                CustomDialogHoshdar2 cdd3 = new CustomDialogHoshdar2(getActivity(),getContext());
-                cdd3.setCanceledOnTouchOutside(false);
-                cdd3.show();
-                break;
+//            case R.id.hoshdare2div:
+//                CustomDialogHoshdar2 cdd3 = new CustomDialogHoshdar2(getActivity(),getContext());
+//                cdd3.setCanceledOnTouchOutside(false);
+//                cdd3.show();
+//                break;
             case R.id.doadiv:
                 CustomDialogAhd cdd4 = new CustomDialogAhd(getActivity(),getContext());
                 cdd4.setCanceledOnTouchOutside(false);

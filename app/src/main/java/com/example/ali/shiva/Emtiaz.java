@@ -190,7 +190,10 @@ public class Emtiaz {
         int emtiaz=0;
         switch (day){
             case 7:
-                db.update_D0(String.valueOf(emtiaz));
+                /// yadat bashad badan in part ra dorost konid
+                // bayad be jay (db.update_D0) yek radifeh jadid tahrif konid
+                //
+//                db.update_D0(String.valueOf(emtiaz));
                 break;
             case 1:
                 db.update_D1(String.valueOf(emtiaz));

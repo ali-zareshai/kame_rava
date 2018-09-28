@@ -165,7 +165,6 @@
         <activity
             android:name=".Main2Activity"
             android:label=""
-            android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 

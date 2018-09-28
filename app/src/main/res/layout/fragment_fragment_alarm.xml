@@ -196,7 +196,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="20dp"
-                        android:text="مدت زمان تاخیر آلارم"
+                        android:text="زمان بیدار شدن"
                         android:layout_height="wrap_content" />
                     <com.example.ali.shiva.CustomTextView2
                         android:layout_width="wrap_content"
@@ -292,7 +292,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="20dp"
-                        android:text="طریقه پخش زنگ های هشدار"
+                        android:text="نحوه پخش آلارم"
                         android:layout_height="wrap_content" />
                     <com.example.ali.shiva.CustomTextView2
                         android:layout_width="wrap_content"

@@ -1,6 +1,7 @@
 package com.example.ali.shiva;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -61,6 +62,7 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.pes.androidmaterialcolorpickerdialog.ColorPicker;
 import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
+import com.viethoa.DialogUtils;
 
 
 public class Main2Activity extends AppCompatActivity
@@ -80,6 +82,7 @@ public class Main2Activity extends AppCompatActivity
     ColorPicker cp;
     SharedPreferences.Editor editor;
     ImageView imageView;
+    Dialog myDialog=null;
     TextView item1,item2,item3,item4,item5;
     boolean number_change;
     ViewPager viewPager;
@@ -679,37 +682,59 @@ public class Main2Activity extends AppCompatActivity
 
 
     private void exist() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                this);
+//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+//                this);
+//
+//        // set title
+//        alertDialogBuilder.setTitle("خروج؟؟؟");
+//
+//        // set dialog message
+//        alertDialogBuilder
+//                .setMessage("آیا می خواهید خارج شوید؟")
+//                .setCancelable(false)
+//                .setPositiveButton("بله",new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog,int id) {
+//                        // if this button is clicked, just close
+//                        // the dialog box and do nothing
+//                        stopService(new Intent(Main2Activity.this,AlarmService.class));
+//                        finish();
+//                    }
+//                })
+//                .setNegativeButton("نه",new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog,int id) {
+//                        // if this button is clicked, just close
+//                        // the dialog box and do nothing
+//                        dialog.cancel();
+//                    }
+//                });
+//
+//        // create alert dialog
+//        AlertDialog alertDialog = alertDialogBuilder.create();
+//
+//        // show it
+//        alertDialog.show();
+        String title = "خروج";
+        String message = "آیا می خواهید خارج شوید؟";
+        String negativeButton = "لغو";
+        String positiveButton = "بله";
 
-        // set title
-        alertDialogBuilder.setTitle("خروج؟؟؟");
-
-        // set dialog message
-        alertDialogBuilder
-                .setMessage("آیا می خواهید خارج شوید؟")
-                .setCancelable(false)
-                .setPositiveButton("بله",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        // if this button is clicked, just close
-                        // the dialog box and do nothing
+        myDialog = DialogUtils.createDialogMessage(this, title, message,
+                negativeButton, positiveButton, false, new DialogUtils.DialogListener() {
+                    @Override
+                    public void onPositiveButton() {
                         stopService(new Intent(Main2Activity.this,AlarmService.class));
                         finish();
                     }
-                })
-                .setNegativeButton("نه",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        // if this button is clicked, just close
-                        // the dialog box and do nothing
-                        dialog.cancel();
+
+                    @Override
+                    public void onNegativeButton() {
+                        myDialog.cancel();
                     }
                 });
 
-        // create alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
-
-        // show it
-        alertDialog.show();
+        if (myDialog != null && !myDialog.isShowing()) {
+            myDialog.show();
+        }
 
     }
 
@@ -791,8 +816,6 @@ public class Main2Activity extends AppCompatActivity
             snackbar.show();
         }else if (id==R.id.nav_help){
             startActivity(new Intent(Main2Activity.this,HelpActivity.class));
-        }else if (id==R.id.nav_test){
-            testApp();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -800,37 +823,37 @@ public class Main2Activity extends AppCompatActivity
         return true;
     }
 
-    private void testApp() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                this);
-
-        // set title
-        alertDialogBuilder.setTitle("توجه!!!!");
-
-        // set dialog message
-        alertDialogBuilder
-                .setMessage("در حالت پیش نمایش ممکن است برخی از تنظیمات شما اعمال نشود و تست کامل نباشد.")
-                .setCancelable(false)
-                .setNeutralButton("فهمیدم",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        db.update_Azan("T");
-                        db.update_Tolo("F");
-                        db.update_final("F");
-                        db.update_Bidar("F");
-                        db.update_Martabeh("0");
-                        db.update_send("F");
-                        Intent intent=new Intent(Main2Activity.this,SlideBar.class);
-                        intent.putExtra("code","1");
-                        startActivity(intent);
-                    }
-                });
-
-        // create alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
-
-        // show it
-        alertDialog.show();
-    }
+//    private void testApp() {
+//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+//                this);
+//
+//        // set title
+//        alertDialogBuilder.setTitle("توجه!!!!");
+//
+//        // set dialog message
+//        alertDialogBuilder
+//                .setMessage("در حالت پیش نمایش ممکن است برخی از تنظیمات شما اعمال نشود و تست کامل نباشد.")
+//                .setCancelable(false)
+//                .setNeutralButton("فهمیدم",new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog,int id) {
+//                        db.update_Azan("T");
+//                        db.update_Tolo("F");
+//                        db.update_final("F");
+//                        db.update_Bidar("F");
+//                        db.update_Martabeh("0");
+//                        db.update_send("F");
+//                        Intent intent=new Intent(Main2Activity.this,SlideBar.class);
+//                        intent.putExtra("code","1");
+//                        startActivity(intent);
+//                    }
+//                });
+//
+//        // create alert dialog
+//        AlertDialog alertDialog = alertDialogBuilder.create();
+//
+//        // show it
+//        alertDialog.show();
+//    }
 
 //    @Override
 //    public void onAnimationStart(Animation animation) {
