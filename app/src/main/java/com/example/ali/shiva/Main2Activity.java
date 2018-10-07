@@ -64,6 +64,9 @@ import com.pes.androidmaterialcolorpickerdialog.ColorPicker;
 import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
 import com.viethoa.DialogUtils;
 
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence;
+import uk.co.deanwild.materialshowcaseview.ShowcaseConfig;
+
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,Animation.AnimationListener {
@@ -91,6 +94,7 @@ public class Main2Activity extends AppCompatActivity
     public static TextView citytxt;
     ProgressBar progressBar;
     Emtiaz emtiaz;
+    private static final String SHOWCASE_ID = "sequence example";
 
 
     @Override
@@ -227,12 +231,6 @@ public class Main2Activity extends AppCompatActivity
                 cdd.show();
             }
         });
-//        imageViewsunline.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(Main2Activity.this,ScrollingActivity.class));
-//            }
-//        });
 
         editor = SP.edit();
 
@@ -391,49 +389,7 @@ public class Main2Activity extends AppCompatActivity
         }
 
 
-        ////////////////////////////////
-//        String Azan = paryer.GetAzanSobh();
-//        String[] az = Azan.split(":");
-//        int Horse_azanSobe = Integer.parseInt(az[0]);
-//        int Min_azaneSobe = Integer.parseInt(az[1]);
-//
-//        Calendar calendar2 = Calendar.getInstance();
-//        Calendar cal2 = Calendar.getInstance();
-//        cal2.add(Calendar.DAY_OF_YEAR, 1); //Adds a day
-//
-//        int day_year=cal2.get(Calendar.DAY_OF_YEAR);
-//
-//        int DAY_NEXT=cal2.get(Calendar.DAY_OF_MONTH);
-//        if (hourse>Horse_azanSobe || (hourse==Horse_azanSobe && min>Min_azaneSobe)){
-//            if (day_year==1){
-//                year++;
-//                calendar2.set(Calendar.YEAR,year);
-//                calendar2.set(Calendar.DAY_OF_YEAR,day_year);
-//            }else {
-//                calendar2.set(Calendar.YEAR,year);
-//                calendar2.set(Calendar.DAY_OF_YEAR,day_year);
-//            }
-//        }
-//        calendar2.set(Calendar.HOUR_OF_DAY, Horse_azanSobe);
-//        calendar2.set(Calendar.MINUTE, Min_azaneSobe);
-//        long interval=calendar2.getTimeInMillis()-System.currentTimeMillis();
-//        int h= (int) (interval/3600000);
-//        int reindeh= (int) (interval%3600000)/60000;
-//        mandeh.setText(String.valueOf(h)+":"+String.valueOf(reindeh));
-//
-//
-//
-//
-//
-//
-//        azan.setText(paryer.GetAzanSobh());
-//        aftab.setText(paryer.GetTolue());
-//        gorehtxt.setText(paryer.GetAzanZohr());
-//        gorubtxt.setText(paryer.GetGhorub());
-//        magrebtxt.setText(paryer.GetAzanMaghreb());
-//        nimehtxt.setText(paryer.GetNimehShab());
-
-
+ 
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -477,8 +433,32 @@ public class Main2Activity extends AppCompatActivity
             view.setBackgroundColor(Color.RED);
             toast.show();
         }
+        
+//        showCast();
 
     }
+
+    private void showCast() {
+        ShowcaseConfig config = new ShowcaseConfig();
+        config.setDelay(500); // half second between each showcase view
+
+        MaterialShowcaseSequence sequence = new MaterialShowcaseSequence(this, SHOWCASE_ID);
+
+        sequence.setConfig(config);
+
+        sequence.addSequenceItem(line1,
+                "اوقات شرعی شهر شما", "فهمیدم");
+
+//        sequence.addSequenceItem(mButtonTwo,
+//                "This is button two", "GOT IT");
+//
+//        sequence.addSequenceItem(mButtonThree,
+//                "This is button three", "GOT IT");
+
+        sequence.start();
+
+    }
+
     public static void sethourse(Context context){
         Calendar cal = Calendar.getInstance();
         Paryer paryer=new Paryer();

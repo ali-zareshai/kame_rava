@@ -47,5 +47,6 @@ dependencies {
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
     compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
     compile 'com.github.viethoa:customdialogs:3.0.0'
+    compile 'com.github.deano2390:MaterialShowcaseView:1.2.0'
 
 }

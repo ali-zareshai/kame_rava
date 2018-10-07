@@ -52,7 +52,10 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         String c2=preferences.getString("type_problem","5");
         String[] val=getContext().getResources().getStringArray(R.array.type_value);
         String[] name=getContext().getResources().getStringArray(R.array.type_name);
+        Log.e("index::",String.valueOf(c2));
+        Log.e("val::",String.valueOf(val.length));
         int indexOf2 = java.util.Arrays.asList(val).indexOf(c2);
+        Log.e("index2",String.valueOf(indexOf2));
         soaltxt.setText(name[indexOf2]);
         //////////
         switch (preferences.getString("problem_level","3")){

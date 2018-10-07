@@ -146,7 +146,7 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_ahang_man","1");//نوع اهنگ
                 editor.putString("type_problem","1");//نوع سوال
                 editor.putString("problem_level","4");//سطح سوالات
-                editor.putString("alarma","60");//هشدار دوم
+                editor.putString("alarma","0");//هشدار دوم
                 txttoast="باویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:5 دقیقه-نوع آهنگ:ملایم-نوع سوال:کپچا معمولی-سطح سوال:متوسط-هشدار دوم:60ثانیه";
 
                 break;
@@ -158,7 +158,7 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_ahang_man","1");//نوع اهنگ
                 editor.putString("type_problem","0");//نوع سوال
                 editor.putString("problem_level","5");//سطح سوالات
-                editor.putString("alarma","120");//هشدار دوم
+                editor.putString("alarma","0");//هشدار دوم
                 txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مسله ریاضی -سطح سوال:سخت -هشدار دوم:120ثانیه";
 
                 break;
@@ -170,7 +170,7 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_ahang_man","1");//نوع اهنگ
                 editor.putString("type_problem","7");//نوع سوال
                 editor.putString("problem_level","5");//سطح سوالات
-                editor.putString("alarma","180");//هشدار دوم
+                editor.putString("alarma","0");//هشدار دوم
                 txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مرتب سازی -سطح سوال:سخت -هشدار دوم:180ثانیه";
 
                 break;
