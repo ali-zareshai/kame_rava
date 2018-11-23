@@ -718,32 +718,7 @@ public class Main2Activity extends AppCompatActivity
 
     }
 
-    public void aboutUS(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                this);
 
-        // set title
-        alertDialogBuilder.setTitle("درباره ما");
-
-        // set dialog message
-        alertDialogBuilder
-                .setMessage("کام روا نسخه 2.0\n برنامه نویس: علی زارعشاهی")
-                .setCancelable(false)
-                .setNeutralButton("خوبه!!",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        // if this button is clicked, just close
-                        // the dialog box and do nothing
-                        dialog.cancel();
-                    }
-                });
-
-        // create alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
-
-        // show it
-        alertDialog.show();
-
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -758,9 +733,6 @@ public class Main2Activity extends AppCompatActivity
             startActivity(intent);
             overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             // Handle the camera action
-        } else if (id == R.id.nav_about) {
-            aboutUS();
-
         } else if (id == R.id.nav_exit) {
             exist();
 
@@ -778,25 +750,25 @@ public class Main2Activity extends AppCompatActivity
             // Append file and send Intent
             intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filePath)));
             startActivity(Intent.createChooser(intent, "فرستادن از طریق ..."));
-        }else if (id==R.id.nav_rotbeh){
-            String s = "متاسفانه اطلاعاتی در دسترس نیست";
-            if (db.get_rotbeh()!=null){
-                if (!db.get_rotbeh().equals("null")){
-                    s="رتبه شما "+FormatHelper.toPersianNumber(db.get_rotbeh())+" از مجموع "+FormatHelper.toPersianNumber(db.get_totol())+" نفر شده است.";
-                }
-            }
-
-
-            Snackbar snackbar=Snackbar.make(getWindow().getDecorView().getRootView(), s, Snackbar.LENGTH_LONG)
-                    .setAction("sssd", null);
-            TextView tv = (TextView) (snackbar.getView()).findViewById(android.support.design.R.id.snackbar_text);
-            Typeface font = Typeface.createFromAsset(getAssets(), "fonts/yekan.ttf");
-            tv.setTypeface(font);
-            tv.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-            snackbar.show();
-        }else if (id==R.id.nav_help){
-            startActivity(new Intent(Main2Activity.this,HelpActivity.class));
         }
+//        else if (id==R.id.nav_rotbeh){
+//            String s = "متاسفانه اطلاعاتی در دسترس نیست";
+//            if (db.get_rotbeh()!=null){
+//                if (!db.get_rotbeh().equals("null")){
+//                    s="رتبه شما "+FormatHelper.toPersianNumber(db.get_rotbeh())+" از مجموع "+FormatHelper.toPersianNumber(db.get_totol())+" نفر شده است.";
+//                }
+//            }
+//
+//
+//            Snackbar snackbar=Snackbar.make(getWindow().getDecorView().getRootView(), s, Snackbar.LENGTH_LONG)
+//                    .setAction("sssd", null);
+//            TextView tv = (TextView) (snackbar.getView()).findViewById(android.support.design.R.id.snackbar_text);
+//            Typeface font = Typeface.createFromAsset(getAssets(), "fonts/yekan.ttf");
+//            tv.setTypeface(font);
+//            tv.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+//            snackbar.show();
+//        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

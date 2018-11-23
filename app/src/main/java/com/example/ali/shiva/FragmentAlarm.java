@@ -31,6 +31,7 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
     SharedPreferences.Editor editor;
     Spinner time_alarm,delaytispin,betweentimspin,randomalspin,moazenspin;
     TextView time_alarm_txt,delaytitxt,betweentimetxt,randomaltxt,typemusictxt,moazentxt;
+    private boolean a,b,c,d,e;
 
 
 
@@ -49,6 +50,7 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         View view=inflater.inflate(R.layout.fragment_fragment_alarm, container, false);
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         editor = preferences.edit();
+        a=b=c=d=e=true;
 
         img331=(RelativeLayout) view.findViewById(R.id.img331);
         vibrehc=(CardView)view.findViewById(R.id.vibreh_card);
@@ -95,6 +97,13 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         settypemusic();
         setmoazn();
 
+        ///////////////////////////
+        setTxttimeAlarm();
+        setdelaytie();
+        setbetweentime();
+        setrandomtime();
+        setmoazn();
+
 ///////////////////////////////////// 11111111111111111111111111111111111111111111111111111111111
         MySpinnerAdapter adapter = new MySpinnerAdapter(
                 getContext(),
@@ -105,6 +114,10 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         time_alarm.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (a){
+                   a=false;
+                   return;
+                }
                 String[] citygeo=getActivity().getResources().getStringArray(R.array.alarm_time_value);
                 String val=citygeo[position];
                 editor.putString("alarm_time",val);
@@ -123,9 +136,14 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
                 Arrays.asList(getResources().getStringArray(R.array.alarm_interval_name))
         );
         delaytispin.setAdapter(adapter2);
+
         delaytispin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (b){
+                    b=false;
+                    return;
+                }
                 String[] citygeo=getActivity().getResources().getStringArray(R.array.alarm_interval_value);
                 String val=citygeo[position];
                 editor.putString("alarm_time_interval",val);
@@ -148,6 +166,10 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         betweentimspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (c){
+                    c=false;
+                    return;
+                }
                 String[] citygeo=getActivity().getResources().getStringArray(R.array.intervel_betwen_alarm_value);
                 String val=citygeo[position];
                 editor.putString("intervel_betwen_alarm",val);
@@ -169,6 +191,10 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         randomalspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (d){
+                    d=false;
+                    return;
+                }
                 String[] citygeo=getActivity().getResources().getStringArray(R.array.type_alarm_value);
                 String val=citygeo[position];
                 editor.putString("type_alarm_random",val);
@@ -190,6 +216,10 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         moazenspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (e){
+                    e=false;
+                    return;
+                }
                 String[] citygeo=getActivity().getResources().getStringArray(R.array.type_moazen_value);
                 String val=citygeo[position];
                 editor.putString("type_moazen",val);
@@ -303,11 +333,7 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
 
 
         //////////////////////////////////
-        setTxttimeAlarm();
-        setdelaytie();
-        setbetweentime();
-        setrandomtime();
-        setmoazn();
+
     }
 
     private void setmoazn() {
@@ -354,12 +380,14 @@ public class FragmentAlarm extends Fragment implements View.OnClickListener {
         String[] city=getActivity().getResources().getStringArray(R.array.alarm_interval_name);
         String[] citygeo=getActivity().getResources().getStringArray(R.array.alarm_interval_value);
         String c=preferences.getString("alarm_time_interval","0a");
+        Log.e("alarm_time_interval",c);
         int indexOf = java.util.Arrays.asList(citygeo).indexOf(c);
 
         String ci=city[indexOf];
         delaytitxt.setText(ci);
         if (!preferences.getString("alarm_time_interval", "").equals("")){
             delaytispin.setSelection(indexOf);
+            Log.e("FragmentAlarm:363",String.valueOf(indexOf));
         }
     }
 

@@ -34,25 +34,13 @@
             <com.example.ali.shiva.CustomButton
                 android:layout_width="wrap_content"
                 android:layout_below="@id/ttr9"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="5dp"
-                android:padding="5dp"
-                android:id="@+id/btnreadquide"
-                android:background="@color/primary_dark"
-                android:textSize="15dp"
-                android:text="مطالعه راهنما"
-                android:layout_height="wrap_content" />
-            <com.example.ali.shiva.CustomButton
-                android:layout_width="wrap_content"
-                android:layout_below="@id/ttr9"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="3dp"
                 android:padding="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@color/dark_green"
                 android:id="@+id/entertoapp"
                 android:textSize="15dp"
                 android:text="ورود به برنامه"
+                android:layout_centerHorizontal="true"
                 android:layout_height="wrap_content" />
 
         </RelativeLayout>

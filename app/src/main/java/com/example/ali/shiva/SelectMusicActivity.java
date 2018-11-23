@@ -95,7 +95,7 @@ public class SelectMusicActivity extends Activity
         MySpinnerAdapter adapter5 = new MySpinnerAdapter(
                 getApplicationContext(),
                 R.layout.view_spinner_item,
-                Arrays.asList(getResources().getStringArray(R.array.type_moazen_value))
+                Arrays.asList(getResources().getStringArray(R.array.type_ahang_name))
         );
         spinner.setAdapter(adapter5);
 

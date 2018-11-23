@@ -23,6 +23,7 @@ import java.util.Arrays;
 public class FragmentSetp2 extends Fragment {
     Spinner spinner;
     String[] array;
+    boolean a=true;
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
     private FragmentSetp2() {
@@ -75,6 +76,10 @@ public class FragmentSetp2 extends Fragment {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (a){
+                    a=false;
+                    return;
+                }
                 String city=array[position];
                 editor.putString("city",city);
                 editor.apply();

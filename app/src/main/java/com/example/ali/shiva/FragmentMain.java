@@ -29,6 +29,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
     CardView geo_card,alarmdiv,soaldiv,doadiv,datadiv;
     static TextView ostan,soaltxt,ahd2txt;
     SharedPreferences preferences;
+    boolean a = true;
     ImageView homedialog,fastoptionbtn,shownotiimg;
     SharedPreferences.Editor editor;
     public static DatabaseHandler db;
@@ -140,6 +141,10 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (a){
+                    a =false;
+                    return;
+                }
                 if (isChecked){
                     getContext().startService(new Intent(getContext(),AlarmService.class));
                     editor.putBoolean("enableapp",true);

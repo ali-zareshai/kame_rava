@@ -13,7 +13,7 @@ import android.widget.Button;
 
 
 public class FragmentSetp4 extends Fragment {
-    Button btnguide,btnexict;
+    Button btnexict;
     private FragmentSetp4() {
     }
     private static FragmentSetp4 fragmentSetp4=new FragmentSetp4();
@@ -26,7 +26,6 @@ public class FragmentSetp4 extends Fragment {
         View view=inflater.inflate(R.layout.fragment_fragment_setp4,container,false);
 
         btnexict=(Button)view.findViewById(R.id.entertoapp);
-        btnguide=(Button)view.findViewById(R.id.btnreadquide);
 
         btnexict.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,14 +35,7 @@ public class FragmentSetp4 extends Fragment {
                 startActivity(i);
             }
         });
-        btnguide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getActivity().getFragmentManager().popBackStack();
-                Intent i = new Intent(getContext(), HelpActivity.class);
-                startActivity(i);
-            }
-        });
+
 
 
         return view;

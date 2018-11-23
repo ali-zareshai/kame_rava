@@ -225,7 +225,6 @@
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
-        <activity android:name=".HelpActivity" />
         <activity
             android:name=".SelectMusicActivity"
             android:screenOrientation="portrait">
@@ -273,7 +272,7 @@
         <service
             android:name=".EndService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true"/>
     </application>
 
 </manifest>

@@ -10,6 +10,8 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PathEffect;
+import android.graphics.Shader;
 import android.graphics.Typeface;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -240,13 +242,15 @@ public class ChangeNotifi {
         Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/yekan.ttf");
         paint.setTypeface(clock);
         paint.setAntiAlias(true);
+        paint.setStyle(Paint.Style.FILL);
 //        paint.setSubpixelText(true);
 //        paint.setAlpha(255);
 //        paint.setDither(true);
-        paint.setFakeBoldText(true);
-        paint.setLinearText(true);
+//        paint.setFakeBoldText(true);
+//        paint.setLinearText(true);
         paint.setColor(Color.WHITE);
         paint.setTextSize(13);
+        paint.setStrokeWidth(200);
         myCanvas.drawText(time, 20, 20, paint);
         return myBitmap;
     }
@@ -255,14 +259,16 @@ public class ChangeNotifi {
         Bitmap myBitmap = Bitmap.createBitmap(220, 25, Bitmap.Config.ARGB_8888);
         Canvas myCanvas = new Canvas(myBitmap);
         Paint paint = new Paint();
-        Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/Vazir.ttf");
+        Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/yekan.ttf");
         paint.setTypeface(clock);
+        paint.setStyle(Paint.Style.FILL);
 //        paint.setAlpha(255);
 //        paint.setDither(true);
 
-        paint.setFakeBoldText(true);
+//        paint.setFakeBoldText(true);
 
-        paint.setLinearText(true);
+//        paint.setLinearText(true);
+        paint.setStrokeWidth(200);
         paint.setAntiAlias(true);
 //        paint.setSubpixelText(true);
 //        paint.setStyle(Paint.Style.FILL);

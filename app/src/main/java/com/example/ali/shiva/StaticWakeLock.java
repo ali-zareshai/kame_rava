@@ -12,10 +12,16 @@
 package com.example.ali.shiva;
 
 import android.content.Context;
+import android.hardware.SensorManager;
 import android.os.PowerManager;
+import android.view.WindowManager;
 
 public class StaticWakeLock {
 	private static PowerManager.WakeLock wl = null;
+	private static SensorManager mSensorManager;
+	private static PowerManager mPowerManager;
+	private static WindowManager mWindowManager;
+	private static PowerManager.WakeLock mWakeLock;
 
 	public static void lockOn(Context context) {
 		PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
@@ -27,11 +33,33 @@ public class StaticWakeLock {
 
 	public static void lockOff(Context context) {
 //		PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
-		try {
-			if (wl != null)
-				wl.release();
+//		try {
+//			if (wl != null)
+//				wl.release();
+//		} catch (Exception e) {
+//			//e.printStackTrace();
+//		}
+		try{
+			// Get an instance of the SensorManager
+			mSensorManager = (SensorManager) context.getSystemService(context.SENSOR_SERVICE);
+
+			// Get an instance of the PowerManager
+			mPowerManager = (PowerManager) context.getSystemService(context.POWER_SERVICE);
+
+			// Get an instance of the WindowManager
+			mWindowManager = (WindowManager) context.getSystemService(context.WINDOW_SERVICE);
+			mWindowManager.getDefaultDisplay();
+
+			// Create a bright wake lock
+			mWakeLock = mPowerManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, StaticWakeLock.class.getName());
+			mWakeLock.release();
+
+
+
 		} catch (Exception e) {
-			//e.printStackTrace();
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-	}
+	} // END onCreate
+
 }

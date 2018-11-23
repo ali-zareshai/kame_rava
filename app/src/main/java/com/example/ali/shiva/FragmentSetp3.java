@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 
 public class FragmentSetp3 extends Fragment {
-    RelativeLayout r1,r2,r3,r4,r5;
+    RelativeLayout r1,r2,r5;
     ImageView img1,img2,img3,img4,img5;
 //    Button next;
     SharedPreferences preferences;
@@ -39,14 +39,10 @@ public class FragmentSetp3 extends Fragment {
 
         r1=(RelativeLayout)view.findViewById(R.id.afradeh1);
         r2=(RelativeLayout)view.findViewById(R.id.afradeh2);
-        r3=(RelativeLayout)view.findViewById(R.id.afradeh3);
-        r4=(RelativeLayout)view.findViewById(R.id.afradeh4);
         r5=(RelativeLayout)view.findViewById(R.id.afradeh5);
 
         img1=(ImageView)view.findViewById(R.id.imgafrade1);
         img2=(ImageView)view.findViewById(R.id.imgafrade2);
-        img3=(ImageView)view.findViewById(R.id.imgafrade3);
-        img4=(ImageView)view.findViewById(R.id.imgafrade4);
         img5=(ImageView)view.findViewById(R.id.imgafrade5);
 
 //        next=(Button)view.findViewById(R.id.next2);
@@ -68,22 +64,6 @@ public class FragmentSetp3 extends Fragment {
                 inVisiableAll();
                 img2.setVisibility(View.VISIBLE);
                 setType(2);
-            }
-        });
-        r3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                inVisiableAll();
-                img3.setVisibility(View.VISIBLE);
-                setType(3);
-            }
-        });
-        r4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                inVisiableAll();
-                img4.setVisibility(View.VISIBLE);
-                setType(4);
             }
         });
         r5.setOnClickListener(new View.OnClickListener() {
@@ -132,36 +112,36 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("alarm_time","60");///مدت زمان آلارم
                 editor.putString("intervel_betwen_alarm","10");//فاصله بین آلارم ها
                 editor.putString("type_ahang_man","0");//نوع اهنگ
-                editor.putString("type_problem","2");//نوع سوال
+                editor.putString("type_problem","1");//نوع سوال
                 editor.putString("problem_level","3");//سطح سوالات
                 editor.putString("alarma","0");//هشدار دوم
-                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:10 دقیقه-نوع آهنگ:موزیکال-نوع سوال:کپچا ریاضی-سطح سوال:آسان-بدون هشدار دوم";
+                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:10 دقیقه-نوع آهنگ:موزیکال-نوع سوال:نوشتن متن-سطح سوال:آسان-بدون هشدار دوم";
 
                 break;
-            case 3:
-                editor.putBoolean("vibreh",true);///ویبره
-                editor.putBoolean("volume",true);///افزایش تدریجی حجم صدا
-                editor.putString("alarm_time","60");///مدت زمان آلارم
-                editor.putString("intervel_betwen_alarm","5");//فاصله بین آلارم ها
-                editor.putString("type_ahang_man","1");//نوع اهنگ
-                editor.putString("type_problem","1");//نوع سوال
-                editor.putString("problem_level","4");//سطح سوالات
-                editor.putString("alarma","0");//هشدار دوم
-                txttoast="باویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:5 دقیقه-نوع آهنگ:ملایم-نوع سوال:کپچا معمولی-سطح سوال:متوسط-هشدار دوم:60ثانیه";
-
-                break;
-            case 4:
-                editor.putBoolean("vibreh",true);///ویبره
-                editor.putBoolean("volume",false);///افزایش تدریجی حجم صدا
-                editor.putString("alarm_time","90");///مدت زمان آلارم
-                editor.putString("intervel_betwen_alarm","0");//فاصله بین آلارم ها
-                editor.putString("type_ahang_man","1");//نوع اهنگ
-                editor.putString("type_problem","0");//نوع سوال
-                editor.putString("problem_level","5");//سطح سوالات
-                editor.putString("alarma","0");//هشدار دوم
-                txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مسله ریاضی -سطح سوال:سخت -هشدار دوم:120ثانیه";
-
-                break;
+//            case 3:
+//                editor.putBoolean("vibreh",true);///ویبره
+//                editor.putBoolean("volume",true);///افزایش تدریجی حجم صدا
+//                editor.putString("alarm_time","60");///مدت زمان آلارم
+//                editor.putString("intervel_betwen_alarm","5");//فاصله بین آلارم ها
+//                editor.putString("type_ahang_man","1");//نوع اهنگ
+//                editor.putString("type_problem","1");//نوع سوال
+//                editor.putString("problem_level","4");//سطح سوالات
+//                editor.putString("alarma","0");//هشدار دوم
+//                txttoast="باویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:5 دقیقه-نوع آهنگ:ملایم-نوع سوال:نوشتن متن-سطح سوال:متوسط-هشدار دوم:60ثانیه";
+//
+//                break;
+//            case 4:
+//                editor.putBoolean("vibreh",true);///ویبره
+//                editor.putBoolean("volume",false);///افزایش تدریجی حجم صدا
+//                editor.putString("alarm_time","90");///مدت زمان آلارم
+//                editor.putString("intervel_betwen_alarm","0");//فاصله بین آلارم ها
+//                editor.putString("type_ahang_man","1");//نوع اهنگ
+//                editor.putString("type_problem","0");//نوع سوال
+//                editor.putString("problem_level","5");//سطح سوالات
+//                editor.putString("alarma","0");//هشدار دوم
+//                txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مسله ریاضی -سطح سوال:سخت -هشدار دوم:120ثانیه";
+//
+//                break;
             case 5:
                 editor.putBoolean("vibreh",true);///ویبره
                 editor.putBoolean("volume",false);///افزایش تدریجی حجم صدا
@@ -190,8 +170,6 @@ public class FragmentSetp3 extends Fragment {
 
         img1.setVisibility(View.INVISIBLE);
         img2.setVisibility(View.INVISIBLE);
-        img3.setVisibility(View.INVISIBLE);
-        img4.setVisibility(View.INVISIBLE);
         img5.setVisibility(View.INVISIBLE);
     }
 }

@@ -98,7 +98,7 @@ public class HeaderOstan extends Dialog implements
                 Main2Activity.sethourse(getContext());
                 context.stopService(new Intent(getContext(),AlarmService.class));
                 context.startService(new Intent(getContext(),AlarmService.class));
-                Toast.makeText(context, "لطفا برنامه را دوباره راه اندازی کنید", Toast.LENGTH_LONG).show();
+//                Toast.makeText(context, "لطفا برنامه را دوباره راه اندازی کنید", Toast.LENGTH_LONG).show();
 //                android.os.Process.killProcess(android.os.Process.myPid());
                 dismiss();
                 break;

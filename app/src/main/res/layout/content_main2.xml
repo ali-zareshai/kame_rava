@@ -62,50 +62,50 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <com.example.ali.shiva.CustomTextView
+            <com.example.ali.shiva.CustomTextView3
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="22dp"
+                android:textSize="20dp"
                 android:padding="3dp"
                 android:paddingRight="5dp"
                 android:layout_marginLeft="3dp"
                 android:layout_alignParentLeft="true"
                 android:id="@+id/item_t1"
                 android:text="ALI"/>
-            <com.example.ali.shiva.CustomTextView
+            <com.example.ali.shiva.CustomTextView3
                 android:layout_width="wrap_content"
                 android:text="ALII"
                 android:layout_below="@+id/item_t1"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:layout_marginLeft="7dp"
                 android:id="@+id/item_t2"
                 android:paddingLeft="5dp"
                 android:layout_alignParentLeft="true"
                 android:layout_height="wrap_content" />
-            <com.example.ali.shiva.CustomTextView
+            <com.example.ali.shiva.CustomTextView3
                 android:layout_width="wrap_content"
                 android:text="BBBBB"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 android:padding="3dp"
                 android:layout_marginRight="16dp"
                 android:id="@+id/item_t3"
                 android:layout_alignParentRight="true"
                 android:layout_height="wrap_content" />
-            <com.example.ali.shiva.CustomTextView
+            <com.example.ali.shiva.CustomTextView3
                 android:layout_width="wrap_content"
                 android:text="CCCCCC"
                 android:layout_marginRight="5dp"
                 android:paddingRight="3dp"
                 android:id="@+id/item_t4"
-                android:textSize="14dp"
+                android:textSize="12dp"
                 android:layout_below="@+id/item_t3"
                 android:layout_alignParentRight="true"
                 android:layout_height="wrap_content" />
-            <com.example.ali.shiva.CustomTextView
+            <com.example.ali.shiva.CustomTextView2
                 android:layout_width="wrap_content"
-                android:text="10"
+                android:text="32"
                 android:id="@+id/item_t5"
-                android:textSize="36dp"
+                android:textSize="34dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:background="@drawable/circle_shap"

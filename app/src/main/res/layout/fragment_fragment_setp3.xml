@@ -85,63 +85,63 @@
                           android:visibility="invisible"
                           android:layout_height="35dp" />
                   </RelativeLayout>
+                  <!--<RelativeLayout-->
+                      <!--android:layout_width="match_parent"-->
+                      <!--android:layout_marginTop="5dp"-->
+                      <!--android:layout_below="@id/afradeh2"-->
+                      <!--android:id="@+id/afradeh3"-->
+                      <!--android:layout_height="wrap_content">-->
+                      <!--<com.example.ali.shiva.CustomTextView3-->
+                          <!--android:layout_width="wrap_content"-->
+                          <!--android:text="@string/type3"-->
+                          <!--android:textColor="@color/black"-->
+                          <!--android:textSize="14dp"-->
+                          <!--android:layout_alignParentLeft="true"-->
+                          <!--android:layout_marginRight="65dp"-->
+                          <!--android:padding="10dp"-->
+                          <!--android:layout_height="wrap_content" />-->
+                      <!--<ImageView-->
+                          <!--android:layout_width="35dp"-->
+                          <!--android:src="@drawable/check"-->
+                          <!--android:id="@+id/imgafrade3"-->
+                          <!--android:layout_alignParentRight="true"-->
+                          <!--android:layout_marginRight="5dp"-->
+                          <!--android:padding="4dp"-->
+                          <!--android:visibility="invisible"-->
+                          <!--android:layout_marginTop="15dp"-->
+                          <!--android:layout_height="35dp" />-->
+                  <!--</RelativeLayout>-->
+
+                  <!--<RelativeLayout-->
+                      <!--android:layout_width="match_parent"-->
+                      <!--android:layout_marginTop="5dp"-->
+                      <!--android:layout_below="@id/afradeh3"-->
+                      <!--android:id="@+id/afradeh4"-->
+                      <!--android:layout_height="wrap_content">-->
+                      <!--<com.example.ali.shiva.CustomTextView3-->
+                          <!--android:layout_width="wrap_content"-->
+                          <!--android:text="@string/type4"-->
+                          <!--android:textColor="@color/black"-->
+                          <!--android:textSize="14dp"-->
+                          <!--android:layout_alignParentLeft="true"-->
+                          <!--android:layout_marginRight="65dp"-->
+                          <!--android:padding="10dp"-->
+                          <!--android:layout_height="wrap_content" />-->
+                      <!--<ImageView-->
+                          <!--android:layout_width="35dp"-->
+                          <!--android:src="@drawable/check"-->
+                          <!--android:id="@+id/imgafrade4"-->
+                          <!--android:layout_alignParentRight="true"-->
+                          <!--android:layout_marginRight="5dp"-->
+                          <!--android:padding="4dp"-->
+                          <!--android:visibility="invisible"-->
+                          <!--android:layout_marginTop="15dp"-->
+                          <!--android:layout_height="35dp" />-->
+                  <!--</RelativeLayout>-->
                   <RelativeLayout
                       android:layout_width="match_parent"
                       android:layout_marginTop="5dp"
                       android:layout_below="@id/afradeh2"
-                      android:id="@+id/afradeh3"
-                      android:layout_height="wrap_content">
-                      <com.example.ali.shiva.CustomTextView3
-                          android:layout_width="wrap_content"
-                          android:text="@string/type3"
-                          android:textColor="@color/black"
-                          android:textSize="14dp"
-                          android:layout_alignParentLeft="true"
-                          android:layout_marginRight="65dp"
-                          android:padding="10dp"
-                          android:layout_height="wrap_content" />
-                      <ImageView
-                          android:layout_width="35dp"
-                          android:src="@drawable/check"
-                          android:id="@+id/imgafrade3"
-                          android:layout_alignParentRight="true"
-                          android:layout_marginRight="5dp"
-                          android:padding="4dp"
-                          android:visibility="invisible"
-                          android:layout_marginTop="15dp"
-                          android:layout_height="35dp" />
-                  </RelativeLayout>
-
-                  <RelativeLayout
-                      android:layout_width="match_parent"
-                      android:layout_marginTop="5dp"
-                      android:layout_below="@id/afradeh3"
-                      android:id="@+id/afradeh4"
-                      android:layout_height="wrap_content">
-                      <com.example.ali.shiva.CustomTextView3
-                          android:layout_width="wrap_content"
-                          android:text="@string/type4"
-                          android:textColor="@color/black"
-                          android:textSize="14dp"
-                          android:layout_alignParentLeft="true"
-                          android:layout_marginRight="65dp"
-                          android:padding="10dp"
-                          android:layout_height="wrap_content" />
-                      <ImageView
-                          android:layout_width="35dp"
-                          android:src="@drawable/check"
-                          android:id="@+id/imgafrade4"
-                          android:layout_alignParentRight="true"
-                          android:layout_marginRight="5dp"
-                          android:padding="4dp"
-                          android:visibility="invisible"
-                          android:layout_marginTop="15dp"
-                          android:layout_height="35dp" />
-                  </RelativeLayout>
-                  <RelativeLayout
-                      android:layout_width="match_parent"
-                      android:layout_marginTop="5dp"
-                      android:layout_below="@id/afradeh4"
                       android:id="@+id/afradeh5"
                       android:layout_height="wrap_content">
                       <com.example.ali.shiva.CustomTextView3
