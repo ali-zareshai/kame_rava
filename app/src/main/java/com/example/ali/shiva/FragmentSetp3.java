@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -85,6 +86,20 @@ public class FragmentSetp3 extends Fragment {
 //                ft.commit();
 //            }
 //        });
+        switch (preferences.getInt("level_select_setp",0)){
+            case 1:
+                img1.setVisibility(View.VISIBLE);
+                break;
+            case 2:
+                img2.setVisibility(View.VISIBLE);
+                break;
+            case 3:
+                img5.setVisibility(View.VISIBLE);
+                break;
+                default:
+                    Log.e("not select","label");
+
+        }
 
 
         return view;
@@ -96,6 +111,7 @@ public class FragmentSetp3 extends Fragment {
         String txttoast=null;
         switch (i){
             case 1:
+                editor.putInt("level_select_setp",1);
                 editor.putBoolean("vibreh",false);///ویبره
                 editor.putBoolean("volume",true);///افزایش تدریجی حجم صدا
                 editor.putString("alarm_time","30");///مدت زمان آلارم
@@ -107,6 +123,7 @@ public class FragmentSetp3 extends Fragment {
                 txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:30 ثانیه-فاصله آلارم ها:30 دقیقه-نوع آهنگ:موزیکال-نوع سوال:ندارد-سطح سوال:آسان-بدون هشدار دوم";
                 break;
             case 2:
+                editor.putInt("level_select_setp",2);
                 editor.putBoolean("vibreh",false);///ویبره
                 editor.putBoolean("volume",true);///افزایش تدریجی حجم صدا
                 editor.putString("alarm_time","60");///مدت زمان آلارم
@@ -143,6 +160,7 @@ public class FragmentSetp3 extends Fragment {
 //
 //                break;
             case 5:
+                editor.putInt("level_select_setp",3);
                 editor.putBoolean("vibreh",true);///ویبره
                 editor.putBoolean("volume",false);///افزایش تدریجی حجم صدا
                 editor.putString("alarm_time","90");///مدت زمان آلارم

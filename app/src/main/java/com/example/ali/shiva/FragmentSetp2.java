@@ -45,8 +45,6 @@ public class FragmentSetp2 extends Fragment {
 
         String[] array2=getContext().getResources().getStringArray(R.array.city_value);
         int indexOf = java.util.Arrays.asList(array2).indexOf(preferences.getString("city","31.89:54.36"));
-        Log.e("index of",String.valueOf(indexOf));
-        spinner.setSelection(indexOf-1);
 
         MySpinnerAdapter adapter5 = new MySpinnerAdapter(
                 getContext(),
@@ -54,6 +52,10 @@ public class FragmentSetp2 extends Fragment {
                 Arrays.asList(getResources().getStringArray(R.array.city_name_sp))
         );
         spinner.setAdapter(adapter5);
+//        Log.e("toatal::",String.valueOf(array2.length));
+//        Log.e("index of",String.valueOf(indexOf));
+        indexOf--;
+        spinner.setSelection(indexOf);
 
 
 
