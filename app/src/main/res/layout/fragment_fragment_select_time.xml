@@ -20,13 +20,13 @@
                 android:textColor="@color/black"
                 android:layout_marginRight="18dp"
                 android:layout_width="wrap_content"
-                android:text="1_لطفا استان محل زندگی خود را انتخاب کنید:"
+                android:text="3-لطفا زمان بیدار شدن خود را انتخاب کنید:"
                 android:layout_height="wrap_content" />
             <Spinner
-                android:layout_width="150dp"
+                android:layout_width="200dp"
                 android:layout_below="@+id/ttr4"
                 android:layout_marginTop="10dp"
-                android:id="@+id/spiner_set2"
+                android:id="@+id/spiner_set3"
                 android:layout_centerHorizontal="true"
                 android:padding="10dp"
                 android:background="@color/accent"

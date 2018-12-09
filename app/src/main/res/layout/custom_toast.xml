@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#006a76"
+        android:id="@+id/root_layer"
+        android:layout_height="120dp">
+        <com.example.ali.shiva.CustomTextView3
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:maxLines="5"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15dp"
+            android:textDirection="rtl"
+            android:id="@+id/text_toast"
+            android:layout_margin="1dp"
+            android:textColor="#ececec"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

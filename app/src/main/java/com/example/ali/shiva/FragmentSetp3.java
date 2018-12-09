@@ -3,6 +3,7 @@ package com.example.ali.shiva;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -18,12 +19,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class FragmentSetp3 extends Fragment {
     RelativeLayout r1,r2,r5;
-    ImageView img1,img2,img3,img4,img5;
+    ImageView img1,img2,img5;
+    private View view;
 //    Button next;
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
@@ -36,7 +39,7 @@ public class FragmentSetp3 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_fragment_setp3,container,false);
+        view=inflater.inflate(R.layout.fragment_fragment_setp3,container,false);
 
         r1=(RelativeLayout)view.findViewById(R.id.afradeh1);
         r2=(RelativeLayout)view.findViewById(R.id.afradeh2);
@@ -174,12 +177,46 @@ public class FragmentSetp3 extends Fragment {
                 break;
         }
         editor.apply();
-        Toast toast = Toast.makeText(getContext(), txttoast, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.CENTER,-10,0);
-        View view = toast.getView();
-        view.setBackgroundColor(Color.DKGRAY);
+//        Snackbar snackbar=Snackbar.make(getActivity().findViewById(android.R.id.content), txttoast, 10000)
+//            .setAction("sssd", null);
+//            TextView tv = (TextView) (snackbar.getView()).findViewById(android.support.design.R.id.snackbar_text);
+//            Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/yekan.ttf");
+//            tv.setTypeface(font);
+//            tv.setMaxLines(4);
+//            tv.setPadding(5,10,5,10);
+//            tv.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+//            snackbar.show();
+
+
+
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        View layout = inflater.inflate(R.layout.custom_toast,
+                (ViewGroup) view.findViewById(R.id.root_layer));
+
+        TextView text = (TextView) layout.findViewById(R.id.text_toast);
+//        text .setTypeface(face, Typeface.NORMAL); // set your typeface here just like you have done above
+        text.setText(txttoast);
+
+        Toast toast = new Toast(getContext());
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
         toast.show();
-//        Snackbar snackbar=Snackbar.make(getActivity().getWindow().getDecorView().getRootView(),txttoast,7500);
+
+
+
+//        Toast toast = new Toast(getActivity());
+//        toast.setGravity(Gravity.CENTER,-10,0);
+//        View view = toast.getView();
+//        TextView text = (TextView) view.findViewById(R.id.text);
+//        view.setBackgroundColor(Color.DKGRAY);
+//        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/yekan.ttf");
+//        text.setTypeface(font);
+//        text.setText(txttoast);
+//        toast.setDuration(Toast.LENGTH_LONG);
+//        toast.show();
+
+//        Snackbar snackbar=Snackbar.make(getActivity().getWindow().getDecorView().getRootView(),txttoast,11000);
 //        snackbar.show();
     }
 

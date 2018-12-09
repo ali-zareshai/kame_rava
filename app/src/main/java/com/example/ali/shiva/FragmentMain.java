@@ -150,16 +150,16 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                     editor.putBoolean("enableapp",true);
                     ////////////
                     Toast toast = Toast.makeText(getContext(), "برنامه فعال شد", Toast.LENGTH_SHORT);
-                    View view = toast.getView();
-                    view.setBackgroundColor(Color.GREEN);
+//                    View view = toast.getView();
+//                    view.setBackgroundColor(Color.GREEN);
                     toast.show();
                 }else {
                     getContext().stopService(new Intent(getContext(),AlarmService.class));
                     editor.putBoolean("enableapp",false);
                     /////////
                     Toast toast = Toast.makeText(getContext(), "برنامه غیرفعال شد", Toast.LENGTH_SHORT);
-                    View view = toast.getView();
-                    view.setBackgroundColor(Color.RED);
+//                    View view = toast.getView();
+//                    view.setBackgroundColor(Color.RED);
                     toast.show();
                 }
                 editor.apply();

@@ -13,9 +13,9 @@
         android:layout_height="match_parent" />
     <com.example.ali.shiva.CustomTextView2
         android:layout_width="wrap_content"
-        android:text="توسعه دهنده:علی زارعشاهی"
+        android:text="A.Zareshahi"
         android:layout_centerHorizontal="true"
-        android:textSize="14dp"
+        android:textSize="11dp"
         android:textColor="#008dea"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"

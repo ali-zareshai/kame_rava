@@ -24,7 +24,7 @@ public class CustomDialogClass extends Dialog implements
 
     public Activity c;
     public Dialog d;
-    public Button ok, gps;
+    public Button ok;
     Spinner spinner;
     String[] array,array2;
     SharedPreferences preferences;
@@ -48,9 +48,7 @@ public class CustomDialogClass extends Dialog implements
 //        ostan=(TextView)((Activity)context).findViewById(R.id.ostanup);
 
         ok = (Button) findViewById(R.id.okdialog1);
-        gps = (Button) findViewById(R.id.gpsdialog1);
         ok.setOnClickListener(this);
-        gps.setOnClickListener(this);
         spinner=(Spinner)findViewById(R.id.spinnerdialog);
 
         MySpinnerAdapter adapter = new MySpinnerAdapter(
@@ -99,10 +97,10 @@ public class CustomDialogClass extends Dialog implements
                 context.startActivity(intent);
                 dismiss();
                 break;
-            case R.id.gpsdialog1:
-                getContext().startActivity(new Intent(getContext(),LocationAc.class));
-                dismiss();
-                break;
+//            case R.id.gpsdialog1:
+//                getContext().startActivity(new Intent(getContext(),LocationAc.class));
+//                dismiss();
+//                break;
             default:
                 break;
         }

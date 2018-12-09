@@ -21,6 +21,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 return FragmentSetp3.getInstance();
             case 3:
+                return FragmentSelectTime.newInstance();
+            case 4:
                 return FragmentSetp4.getInstance();
         }
         return null;
@@ -28,6 +30,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 }
