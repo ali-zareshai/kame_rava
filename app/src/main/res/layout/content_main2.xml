@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:text="ALII"
                 android:layout_below="@+id/item_t1"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_marginLeft="7dp"
                 android:id="@+id/item_t2"
                 android:paddingLeft="5dp"

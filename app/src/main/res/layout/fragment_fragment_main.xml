@@ -93,13 +93,48 @@
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             app:cardElevation="4dp"
-            android:id="@+id/georo"
+            android:id="@+id/resetappcard"
             app:cardCornerRadius="4dp"
             app:cardMaxElevation="5dp"
             android:elevation="5dp"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
             android:layout_below="@id/enableappcard"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.ali.shiva.CustomTextView2
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:textSize="12dp"
+                    android:paddingRight="5dp"
+                    android:text="تازه سازی نمودار"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_autorenew_black_24dp"
+                    android:layout_height="25dp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardElevation="4dp"
+            android:id="@+id/georo"
+            app:cardCornerRadius="4dp"
+            app:cardMaxElevation="5dp"
+            android:elevation="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/resetappcard"
             android:layout_height="40dp">
             <RelativeLayout
                 android:layout_width="match_parent"

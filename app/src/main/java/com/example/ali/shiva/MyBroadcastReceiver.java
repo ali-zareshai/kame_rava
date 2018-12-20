@@ -54,7 +54,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         context.stopService(new Intent(context,AlarmService.class));
         context.startService(new Intent(context,StopAlarmservice.class));
 //        context.startService(new Intent(context,ChangeNotfiService.class));
-        StaticWakeLock.lockOn(context);
+//        StaticWakeLock.lockOn(context);
         Intent math=new Intent(context,StartAlarm2.class);
         context.startService(math);
         }else {

@@ -112,7 +112,7 @@ public class RandomActivit extends Activity implements View.OnClickListener {
 
         /////////////
         db = new DatabaseHandler(this);
-        StaticWakeLock.lockOn(this);
+//        StaticWakeLock.lockOn(this);
         ttimer=new Timer();
         ttimer.schedule(timerTask,1000,3000);
         ////////////////////////////////////////////////////////////////////////

@@ -178,7 +178,7 @@ public class Util {
 //        }
         increateVolume();
 
-        StaticWakeLock.lockOn(context);
+//        StaticWakeLock.lockOn(context);
 
         if (SP.getBoolean("vibreh",true)) {
             vibrator = (Vibrator) context.getSystemService(context.VIBRATOR_SERVICE);
@@ -518,7 +518,7 @@ public class Util {
     }
     public void startAlarmFinal() {
         increateVolume();
-        StaticWakeLock.lockOn(context);
+//        StaticWakeLock.lockOn(context);
 
         if (SP.getBoolean("vibreh",true)) {
             vibrator = (Vibrator) context.getSystemService(context.VIBRATOR_SERVICE);

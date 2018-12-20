@@ -11,15 +11,15 @@
         android:src="@drawable/splash"
         android:scaleType="fitXY"
         android:layout_height="match_parent" />
-    <com.example.ali.shiva.CustomTextView2
-        android:layout_width="wrap_content"
-        android:text="A.Zareshahi"
-        android:layout_centerHorizontal="true"
-        android:textSize="11dp"
-        android:textColor="#008dea"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_height="wrap_content" />
+    <!--<com.example.ali.shiva.CustomTextView2-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="A.Zareshahi"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="11dp"-->
+        <!--android:textColor="#008dea"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:layout_height="wrap_content" />-->
     </RelativeLayout>
 
 </FrameLayout>

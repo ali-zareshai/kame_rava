@@ -24,12 +24,15 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.viethoa.DialogUtils;
+
 
 public class FragmentMain extends Fragment implements View.OnClickListener {
-    CardView geo_card,alarmdiv,soaldiv,doadiv,datadiv;
+    CardView geo_card,alarmdiv,soaldiv,doadiv,datadiv,resetdiv;
     static TextView ostan,soaltxt,ahd2txt;
     SharedPreferences preferences;
     boolean a = true;
+    Dialog myDialog=null;
     ImageView homedialog,fastoptionbtn,shownotiimg;
     SharedPreferences.Editor editor;
     public static DatabaseHandler db;
@@ -115,6 +118,10 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         homedialog=(ImageView)view.findViewById(R.id.homedialog);
         fastoptionbtn=(ImageView)view.findViewById(R.id.fastoptionbtn);
         aSwitch=(Switch)view.findViewById(R.id.switchenable);
+
+
+        resetdiv=(CardView)view.findViewById(R.id.resetappcard);
+        resetdiv.setOnClickListener(this);
 
 
 
@@ -240,9 +247,37 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
             case R.id.fastoptionbtn:
                 getContext().startActivity(new Intent(getContext(),StepActivity.class));
                 break;
+            case R.id.resetappcard:
+                getSoal();
+                break;
 
 
 
+
+        }
+    }
+
+    private void getSoal(){
+        String title = "تازه سازی نمودار";
+        String message = "آیا می خواهید نمودار ریست شود؟";
+        String negativeButton = "لغو";
+        String positiveButton = "بله";
+
+        myDialog = DialogUtils.createDialogMessage(getActivity(), title, message,
+                negativeButton, positiveButton, false, new DialogUtils.DialogListener() {
+                    @Override
+                    public void onPositiveButton() {
+                        db.update_D0("");
+                    }
+
+                    @Override
+                    public void onNegativeButton() {
+                        myDialog.cancel();
+                    }
+                });
+
+        if (myDialog != null && !myDialog.isShowing()) {
+            myDialog.show();
         }
     }
 

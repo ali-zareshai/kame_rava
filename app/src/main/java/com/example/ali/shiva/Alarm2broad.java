@@ -20,7 +20,7 @@ public class Alarm2broad extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        StaticWakeLock.lockOn(context);
+//        StaticWakeLock.lockOn(context);
         context.stopService(new Intent(context,Hoshdareh2Alarm.class));
         intent1=new Intent(context,RandomActivit.class);
         intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

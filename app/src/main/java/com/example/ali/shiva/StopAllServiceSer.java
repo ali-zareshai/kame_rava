@@ -36,7 +36,7 @@ public class StopAllServiceSer extends BroadcastReceiver {
         if (db.get_Ahd()){
             intent1=new Intent(context,DoaAhdActivity.class);
             intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            StaticWakeLock.lockOn(context);
+//            StaticWakeLock.lockOn(context);
             context.startActivity(intent1);
         }
         if (!SP.getBoolean("enable_date", false)) {

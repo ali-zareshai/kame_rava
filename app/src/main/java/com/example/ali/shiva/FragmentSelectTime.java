@@ -22,6 +22,7 @@ public class FragmentSelectTime extends Fragment {
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
     private  boolean a=true;
+    private int indexOf;
     private FragmentSelectTime() {
         // Required empty public constructor
     }
@@ -51,8 +52,11 @@ public class FragmentSelectTime extends Fragment {
         String[] array2=getContext().getResources().getStringArray(R.array.alarm_interval_value);
 //        Log.e("alarm_time_interval",preferences.getString("alarm_time_interval","0a"));
 //        Log.e("array2", String.valueOf(array2));
-        int indexOf = java.util.Arrays.asList(array2).indexOf(preferences.getString("alarm_time_interval","0a"));
-
+//        Log.e("Default_alarm time",preferences.getString("alarm_time_interval","0a"));
+        indexOf = java.util.Arrays.asList(array2).indexOf(preferences.getString("alarm_time_interval","0a"));
+        if (indexOf == -1){
+            indexOf = 6;
+        }
         MySpinnerAdapter adapter5 = new MySpinnerAdapter(
                 getContext(),
                 R.layout.view_spinner_item,
@@ -62,7 +66,7 @@ public class FragmentSelectTime extends Fragment {
 //        Log.e("toatal::",String.valueOf(array2.length));
 //        Log.e("index of",String.valueOf(indexOf));
 //        indexOf--;
-        Log.e("index_time",String.valueOf(indexOf));
+//        Log.e("index_time",String.valueOf(indexOf));
         spinner.setSelection(indexOf);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

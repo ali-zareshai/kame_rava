@@ -90,6 +90,10 @@ public class FragmentSetp3 extends Fragment {
 //            }
 //        });
         switch (preferences.getInt("level_select_setp",0)){
+            case 0:
+                setConfigAval();
+                img1.setVisibility(View.VISIBLE);
+                break;
             case 1:
                 img1.setVisibility(View.VISIBLE);
                 break;
@@ -100,7 +104,7 @@ public class FragmentSetp3 extends Fragment {
                 img5.setVisibility(View.VISIBLE);
                 break;
                 default:
-                    Log.e("not select","label");
+                    img1.setVisibility(View.VISIBLE);
 
         }
 
@@ -108,6 +112,20 @@ public class FragmentSetp3 extends Fragment {
         return view;
 
 
+    }
+
+    private void setConfigAval(){
+        editor.putInt("level_select_setp",1);
+        editor.putBoolean("vibreh",false);///ویبره
+        editor.putBoolean("volume",true);///افزایش تدریجی حجم صدا
+        editor.putString("alarm_time","30");///مدت زمان آلارم
+        editor.putString("intervel_betwen_alarm","30");//فاصله بین آلارم ها
+        editor.putString("type_ahang_man","0");//نوع اهنگ
+        editor.putString("type_problem","5");//نوع سوال
+        editor.putString("problem_level","3");//سطح سوالات
+        editor.putString("alarma","0");//هشدار دوم
+
+        editor.apply();
     }
 
     private void setType(int i) {
