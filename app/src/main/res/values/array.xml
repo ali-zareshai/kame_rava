@@ -17,13 +17,13 @@
     </string-array>
 
     <string-array name="alarm_interval_name">
+        <item> هنگام اذان</item>
         <item>120 دقیقه قبل از اذان</item>
         <item>90 دقیقه قبل از اذان</item>
         <item>60 دقیقه قبل از اذان</item>
         <item>30 دقیقه قبل از اذان</item>
         <item>20 دقیقه قبل از اذان</item>
         <item>10 دقیقه قبل از اذان</item>
-        <item> هنگام اذان</item>
         <item>15 دقیقه مانده به طلوع</item>
         <item>30 دقیقه مانده به طلوع</item>
         <item>45 دقیقه مانده به طلوع</item>
@@ -31,13 +31,13 @@
     </string-array>
 
     <string-array name="alarm_interval_value">
+        <item>0a</item>
         <item>120a</item>
         <item>90a</item>
         <item>60a</item>
         <item>30a</item>
         <item>20a</item>
         <item>10a</item>
-        <item>0a</item>
         <item>15t</item>
         <item>30t</item>
         <item>45t</item>

@@ -141,7 +141,7 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("type_problem","5");//نوع سوال
                 editor.putString("problem_level","3");//سطح سوالات
                 editor.putString("alarma","0");//هشدار دوم
-                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:30 ثانیه-فاصله آلارم ها:30 دقیقه-نوع آهنگ:موزیکال-نوع سوال:ندارد-سطح سوال:آسان-بدون هشدار دوم";
+                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:30 ثانیه-فاصله آلارم ها:30 دقیقه-نوع آهنگ:موزیکال-سطح سوال:آسان-بدون هشدار دوم";
                 break;
             case 2:
                 editor.putInt("level_select_setp",2);
@@ -150,10 +150,10 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("alarm_time","60");///مدت زمان آلارم
                 editor.putString("intervel_betwen_alarm","10");//فاصله بین آلارم ها
                 editor.putString("type_ahang_man","0");//نوع اهنگ
-                editor.putString("type_problem","1");//نوع سوال
+                editor.putString("type_problem","5");//نوع سوال
                 editor.putString("problem_level","3");//سطح سوالات
                 editor.putString("alarma","0");//هشدار دوم
-                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:10 دقیقه-نوع آهنگ:موزیکال-نوع سوال:نوشتن متن-سطح سوال:آسان-بدون هشدار دوم";
+                txttoast="بدون ویبره-افزایش تدریجی آلارم-آلارم:60 ثانیه-فاصله آلارم ها:10 دقیقه-نوع آهنگ:موزیکال-سطح سوال:آسان-بدون هشدار دوم";
 
                 break;
 //            case 3:
@@ -187,10 +187,10 @@ public class FragmentSetp3 extends Fragment {
                 editor.putString("alarm_time","90");///مدت زمان آلارم
                 editor.putString("intervel_betwen_alarm","0");//فاصله بین آلارم ها
                 editor.putString("type_ahang_man","1");//نوع اهنگ
-                editor.putString("type_problem","7");//نوع سوال
-                editor.putString("problem_level","5");//سطح سوالات
+                editor.putString("type_problem","5");//نوع سوال
+                editor.putString("problem_level","3");//سطح سوالات
                 editor.putString("alarma","0");//هشدار دوم
-                txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-نوع سوال:مرتب سازی -سطح سوال:سخت -هشدار دوم:180ثانیه";
+                txttoast="باویبره-بدون افزایش تدریجی صدا-آلارم:90 ثانیه-فاصله آلارم ها:متناوب -نوع آهنگ:ملایم-سطح سوال:سخت -هشدار دوم:180ثانیه";
 
                 break;
         }
